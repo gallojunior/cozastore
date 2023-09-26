@@ -1,0 +1,31 @@
+git config --global user.name GalloJunior
+git config --global user.email gallojunior@gmail.com
+git clone https://github.com/gallojunior/cozastoreA.git
+
+dotnet new gitignore
+
+/* Criar a solução e o projeto */
+dotnet new sln --name CozaStore
+dotnet new mvc -o CozaStore -f net6.0
+dotnet sln add CozaStore\CozaStore.csproj
+
+/* Instalação dos Pacotes */
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.22
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.22
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.2
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.21
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.16
+
+
+Copiar template para o projeto, arquivos estáticos na pasta wwwroot e index.cshtml para _Layout.cshtml e Index.cshtml
+
+Analise do Template para determinar as classes de dominio e exibição
+
+
+Categorias
+    Id
+    Nome
+    Foto
+    Filtrar
+
