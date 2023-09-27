@@ -1,21 +1,25 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CozaStore.Models;
+using CozaStore.Services;
 
 namespace CozaStore.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IProdutoService _produtoService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IProdutoService produtoService)
     {
         _logger = logger;
+        _produtoService = produtoService;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var produtos = await _produtoService.GetProdutos();
+        return View(produtos);
     }
 
     public IActionResult Loja()

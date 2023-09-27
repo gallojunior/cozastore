@@ -9,4 +9,6 @@ public class ProdutoVM
     public List<string> Fotos { get; set; }
     public List<string> Tamanhos { get; set; }
     public List<string> Cores { get; set; }
+    public List<string> Categorias { get; set; }
+    public List<string> Tags { get; set; }
 }

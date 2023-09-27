@@ -1,4 +1,5 @@
 using CozaStore.Data;
+using CozaStore.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,8 @@ builder.Services.AddDbContext<AppDbContext>(opcoes =>
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.AddTransient<IProdutoService, ProdutoService>();
 
 var app = builder.Build();
 

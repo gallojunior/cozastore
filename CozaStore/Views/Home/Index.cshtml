@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ICollection<CozaStore.ViewModels.ProdutoVM>
+@{
 	ViewData["Title"] = "Home";
 }
 
@@ -178,6 +179,10 @@
 			<h3 class="ltext-103 cl5">
 				Destaques
 			</h3>
+			@foreach (var produto in Model)
+			{
+				<h1>@produto.Nome</h1>
+			}
 		</div>
 
 		<div class="flex-w flex-sb-m p-b-52">

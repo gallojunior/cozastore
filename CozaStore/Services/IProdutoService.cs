@@ -4,5 +4,5 @@ namespace CozaStore.Services;
 
 public interface IProdutoService
 {
-    Task<List<ProdutoVM>> GetProduto();
+    Task<List<ProdutoVM>> GetProdutos();
 }
