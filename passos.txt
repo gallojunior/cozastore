@@ -23,9 +23,106 @@ Copiar template para o projeto, arquivos estáticos na pasta wwwroot e index.csh
 Analise do Template para determinar as classes de dominio e exibição
 
 
-Categorias
+Categoria
     Id
     Nome
     Foto
     Filtrar
+    Banner
 
+Cor
+    Id
+    Nome
+    CodigoHexa
+
+Tag
+    Id
+    Nome
+
+Tamanho
+    Id
+    Sigla
+    Nome
+
+Produto
+    Id
+    Nome
+    DescricaoResumida
+    DescricaoCompleta
+    SKU
+    Preco
+    PrecoDesconto
+    Destaque
+    Peso
+    Material
+    Dimensao
+
+ProdutoCategoria
+    ProdutoId
+    CategoriaId
+
+ProdutoTag
+    ProdutoId
+    TagId
+
+ProdutoEstoque
+    Id
+    ProdutoId
+    TamanhoId
+    CorId
+    Preco
+    PrecoDesconto
+    QtdeEstoque
+
+ProdutoFoto
+    Id
+    ProdutoId
+    ArquivoFoto
+    Principal
+
+ProdutoAvaliacao
+    ProdutoId
+    UserId
+    AvaliacaoTexto
+    AvaliacaoData
+    ProdutoNota
+
+Usuario
+    Nome
+    DataNascimento
+    Foto
+
+ListaDesejo
+    UsuarioId
+    ProdutoId
+    DataCadastro
+
+Carrinho
+    Id
+    UsuarioId
+    DataCadastro
+    DataModificacao
+
+CarrinhoProduto
+    CarrinhoId
+    ProdutoEstoqueId
+    Preco
+    PrecoDesconto
+    Qtde
+
+Blog
+    Id
+    Nome
+    Texto
+    Foto
+    UsuarioId
+    DataCadastro
+
+BlogTag
+    BlogId
+    TagId
+
+
+Configurar a connectionString
+
+Adicionar os serviços ao Program.cs

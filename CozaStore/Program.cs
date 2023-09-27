@@ -1,7 +1,23 @@
+using CozaStore.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Objetos auxiliares de conexão
+string conn = builder.Configuration.GetConnectionString("cozastore");
+var version = ServerVersion.AutoDetect(conn);
+
+builder.Services.AddDbContext<AppDbContext>(opcoes =>
+    opcoes.UseMySql(conn, version)
+);
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -18,6 +34,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
