@@ -17,6 +17,8 @@ dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6
 
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.16
 
+dotnet add package SendGrid --version 9.28.1
+
 
 Copiar template para o projeto, arquivos estáticos na pasta wwwroot e index.cshtml para _Layout.cshtml e Index.cshtml
 

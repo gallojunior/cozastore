@@ -2,24 +2,22 @@
 using Microsoft.AspNetCore.Mvc;
 using CozaStore.Models;
 using CozaStore.Services;
-
 namespace CozaStore.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly IProdutoService _produtoService;
+    private readonly IHomeService _homeService;
 
-    public HomeController(ILogger<HomeController> logger, IProdutoService produtoService)
+    public HomeController(ILogger<HomeController> logger, IHomeService homeService)
     {
         _logger = logger;
-        _produtoService = produtoService;
+        _homeService = homeService;
     }
 
     public async Task<IActionResult> Index()
     {
-        var produtos = await _produtoService.GetProdutos();
-        return View(produtos);
+        return View(await _homeService.GetIndexData());
     }
 
     public IActionResult Loja()

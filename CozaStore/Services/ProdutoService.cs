@@ -1,4 +1,5 @@
 using CozaStore.Data;
+using CozaStore.Models;
 using CozaStore.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,8 +15,8 @@ public class ProdutoService : IProdutoService
 
     public async Task<List<ProdutoVM>> GetProdutos()
     {
-        var produtos =
-            from produto in _contexto.Produtos
+        var produtos = await
+            (from produto in _contexto.Produtos
             let categorias =
                 (from prodCategoria in _contexto.ProdutoCategorias
                 join categoria in _contexto.Categorias on prodCategoria.CategoriaId equals categoria.Id
@@ -52,7 +53,9 @@ public class ProdutoService : IProdutoService
                 Cores = cores,
                 Tamanhos = tamanhos,
                 Fotos = fotos
-            };
-        return await produtos.ToListAsync();
+            }).ToListAsync();
+        produtos.ForEach(p => p.Cores = p.Cores.Distinct().ToList());
+        produtos.ForEach(p => p.Tamanhos = p.Tamanhos.Distinct().ToList());
+        return produtos;
     }
 }

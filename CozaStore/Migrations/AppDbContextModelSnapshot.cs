@@ -327,6 +327,138 @@ namespace CozaStore.Migrations
                             Preco = 20.64m,
                             PrecoDesconto = 20.64m,
                             SKU = "CAM-01"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Camiseta Herschel supply",
+                            Peso = 0m,
+                            Preco = 35.31m,
+                            PrecoDesconto = 35.31m,
+                            SKU = "CAM-02"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Camiseta Quadriculada",
+                            Peso = 0m,
+                            Preco = 25.50m,
+                            PrecoDesconto = 25.50m,
+                            SKU = "CAM-03"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Casaco Classic Trench",
+                            Peso = 0m,
+                            Preco = 75.25m,
+                            PrecoDesconto = 75.25m,
+                            SKU = "CAS-01"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Lightweight Jacket",
+                            Peso = 0m,
+                            Preco = 53.0m,
+                            PrecoDesconto = 53.0m,
+                            SKU = "COJ-01"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Femme T-Shirt In Stripe",
+                            Peso = 0m,
+                            Preco = 25.85m,
+                            PrecoDesconto = 25.85m,
+                            SKU = "CAM-06"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Camiseta Herschel supply",
+                            Peso = 0m,
+                            Preco = 63.16m,
+                            PrecoDesconto = 63.16m,
+                            SKU = "CAM-09"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Camiseta T-Shirt with Sleeve",
+                            Peso = 0m,
+                            Preco = 18.49m,
+                            PrecoDesconto = 18.49m,
+                            SKU = "CAM-14"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Relógio Vintage Classic",
+                            Peso = 0m,
+                            Preco = 93.20m,
+                            PrecoDesconto = 93.20m,
+                            SKU = "REL-01"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Tênis All Star Hi Plimsolls",
+                            Peso = 0m,
+                            Preco = 75.0m,
+                            PrecoDesconto = 75.0m,
+                            SKU = "CAL-09"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Cinto de Couro",
+                            Peso = 0m,
+                            Preco = 63.15m,
+                            PrecoDesconto = 63.15m,
+                            SKU = "CIN-04"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                            DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                            Destaque = true,
+                            Nome = "Mini Silver Mesh Watch",
+                            Peso = 0m,
+                            Preco = 86.85m,
+                            PrecoDesconto = 86.85m,
+                            SKU = "REL-04"
                         });
                 });
 
@@ -379,6 +511,61 @@ namespace CozaStore.Migrations
                         {
                             ProdutoId = 1,
                             CategoriaId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 2,
+                            CategoriaId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 3,
+                            CategoriaId = (byte)2
+                        },
+                        new
+                        {
+                            ProdutoId = 4,
+                            CategoriaId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 5,
+                            CategoriaId = (byte)2
+                        },
+                        new
+                        {
+                            ProdutoId = 6,
+                            CategoriaId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 7,
+                            CategoriaId = (byte)2
+                        },
+                        new
+                        {
+                            ProdutoId = 8,
+                            CategoriaId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 9,
+                            CategoriaId = (byte)6
+                        },
+                        new
+                        {
+                            ProdutoId = 10,
+                            CategoriaId = (byte)5
+                        },
+                        new
+                        {
+                            ProdutoId = 11,
+                            CategoriaId = (byte)3
+                        },
+                        new
+                        {
+                            ProdutoId = 12,
+                            CategoriaId = (byte)6
                         });
                 });
 
@@ -420,26 +607,1538 @@ namespace CozaStore.Migrations
                         new
                         {
                             Id = 1,
-                            CorId = (byte)6,
+                            CorId = (byte)1,
                             ProdutoId = 1,
-                            QtdeEstoque = 10,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)1
                         },
                         new
                         {
                             Id = 2,
-                            CorId = (byte)6,
+                            CorId = (byte)1,
                             ProdutoId = 1,
-                            QtdeEstoque = 10,
+                            QtdeEstoque = 20,
                             TamanhoId = (byte)2
                         },
                         new
                         {
                             Id = 3,
+                            CorId = (byte)1,
+                            ProdutoId = 1,
+                            QtdeEstoque = 35,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CorId = (byte)1,
+                            ProdutoId = 1,
+                            QtdeEstoque = 26,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CorId = (byte)2,
+                            ProdutoId = 1,
+                            QtdeEstoque = 7,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CorId = (byte)2,
+                            ProdutoId = 1,
+                            QtdeEstoque = 15,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CorId = (byte)2,
+                            ProdutoId = 1,
+                            QtdeEstoque = 12,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CorId = (byte)2,
+                            ProdutoId = 1,
+                            QtdeEstoque = 14,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CorId = (byte)3,
+                            ProdutoId = 1,
+                            QtdeEstoque = 14,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CorId = (byte)3,
+                            ProdutoId = 1,
+                            QtdeEstoque = 6,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CorId = (byte)3,
+                            ProdutoId = 1,
+                            QtdeEstoque = 25,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CorId = (byte)3,
+                            ProdutoId = 1,
+                            QtdeEstoque = 17,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CorId = (byte)4,
+                            ProdutoId = 1,
+                            QtdeEstoque = 4,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CorId = (byte)4,
+                            ProdutoId = 1,
+                            QtdeEstoque = 14,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CorId = (byte)4,
+                            ProdutoId = 1,
+                            QtdeEstoque = 49,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CorId = (byte)4,
+                            ProdutoId = 1,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CorId = (byte)5,
+                            ProdutoId = 1,
+                            QtdeEstoque = 18,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CorId = (byte)5,
+                            ProdutoId = 1,
+                            QtdeEstoque = 22,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CorId = (byte)5,
+                            ProdutoId = 1,
+                            QtdeEstoque = 23,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CorId = (byte)5,
+                            ProdutoId = 1,
+                            QtdeEstoque = 12,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 21,
                             CorId = (byte)6,
                             ProdutoId = 1,
-                            QtdeEstoque = 10,
+                            QtdeEstoque = 7,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CorId = (byte)6,
+                            ProdutoId = 1,
+                            QtdeEstoque = 47,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CorId = (byte)6,
+                            ProdutoId = 1,
+                            QtdeEstoque = 40,
                             TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CorId = (byte)6,
+                            ProdutoId = 1,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CorId = (byte)1,
+                            ProdutoId = 2,
+                            QtdeEstoque = 15,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CorId = (byte)1,
+                            ProdutoId = 2,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CorId = (byte)1,
+                            ProdutoId = 2,
+                            QtdeEstoque = 11,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CorId = (byte)1,
+                            ProdutoId = 2,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CorId = (byte)2,
+                            ProdutoId = 2,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CorId = (byte)2,
+                            ProdutoId = 2,
+                            QtdeEstoque = 26,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CorId = (byte)2,
+                            ProdutoId = 2,
+                            QtdeEstoque = 32,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CorId = (byte)2,
+                            ProdutoId = 2,
+                            QtdeEstoque = 7,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CorId = (byte)3,
+                            ProdutoId = 2,
+                            QtdeEstoque = 22,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 34,
+                            CorId = (byte)3,
+                            ProdutoId = 2,
+                            QtdeEstoque = 43,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 35,
+                            CorId = (byte)3,
+                            ProdutoId = 2,
+                            QtdeEstoque = 42,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 36,
+                            CorId = (byte)3,
+                            ProdutoId = 2,
+                            QtdeEstoque = 26,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 37,
+                            CorId = (byte)4,
+                            ProdutoId = 2,
+                            QtdeEstoque = 43,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 38,
+                            CorId = (byte)4,
+                            ProdutoId = 2,
+                            QtdeEstoque = 22,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 39,
+                            CorId = (byte)4,
+                            ProdutoId = 2,
+                            QtdeEstoque = 7,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 40,
+                            CorId = (byte)4,
+                            ProdutoId = 2,
+                            QtdeEstoque = 32,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 41,
+                            CorId = (byte)5,
+                            ProdutoId = 2,
+                            QtdeEstoque = 19,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 42,
+                            CorId = (byte)5,
+                            ProdutoId = 2,
+                            QtdeEstoque = 31,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 43,
+                            CorId = (byte)5,
+                            ProdutoId = 2,
+                            QtdeEstoque = 9,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 44,
+                            CorId = (byte)5,
+                            ProdutoId = 2,
+                            QtdeEstoque = 15,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 45,
+                            CorId = (byte)6,
+                            ProdutoId = 2,
+                            QtdeEstoque = 29,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 46,
+                            CorId = (byte)6,
+                            ProdutoId = 2,
+                            QtdeEstoque = 7,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 47,
+                            CorId = (byte)6,
+                            ProdutoId = 2,
+                            QtdeEstoque = 34,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 48,
+                            CorId = (byte)6,
+                            ProdutoId = 2,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 49,
+                            CorId = (byte)1,
+                            ProdutoId = 3,
+                            QtdeEstoque = 46,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 50,
+                            CorId = (byte)1,
+                            ProdutoId = 3,
+                            QtdeEstoque = 0,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 51,
+                            CorId = (byte)1,
+                            ProdutoId = 3,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 52,
+                            CorId = (byte)1,
+                            ProdutoId = 3,
+                            QtdeEstoque = 29,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 53,
+                            CorId = (byte)2,
+                            ProdutoId = 3,
+                            QtdeEstoque = 7,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 54,
+                            CorId = (byte)2,
+                            ProdutoId = 3,
+                            QtdeEstoque = 23,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 55,
+                            CorId = (byte)2,
+                            ProdutoId = 3,
+                            QtdeEstoque = 40,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 56,
+                            CorId = (byte)2,
+                            ProdutoId = 3,
+                            QtdeEstoque = 34,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 57,
+                            CorId = (byte)3,
+                            ProdutoId = 3,
+                            QtdeEstoque = 3,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 58,
+                            CorId = (byte)3,
+                            ProdutoId = 3,
+                            QtdeEstoque = 24,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 59,
+                            CorId = (byte)3,
+                            ProdutoId = 3,
+                            QtdeEstoque = 42,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 60,
+                            CorId = (byte)3,
+                            ProdutoId = 3,
+                            QtdeEstoque = 12,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 61,
+                            CorId = (byte)4,
+                            ProdutoId = 3,
+                            QtdeEstoque = 31,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 62,
+                            CorId = (byte)4,
+                            ProdutoId = 3,
+                            QtdeEstoque = 19,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 63,
+                            CorId = (byte)4,
+                            ProdutoId = 3,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 64,
+                            CorId = (byte)4,
+                            ProdutoId = 3,
+                            QtdeEstoque = 14,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 65,
+                            CorId = (byte)5,
+                            ProdutoId = 3,
+                            QtdeEstoque = 24,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 66,
+                            CorId = (byte)5,
+                            ProdutoId = 3,
+                            QtdeEstoque = 10,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 67,
+                            CorId = (byte)5,
+                            ProdutoId = 3,
+                            QtdeEstoque = 29,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 68,
+                            CorId = (byte)5,
+                            ProdutoId = 3,
+                            QtdeEstoque = 21,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 69,
+                            CorId = (byte)6,
+                            ProdutoId = 3,
+                            QtdeEstoque = 8,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 70,
+                            CorId = (byte)6,
+                            ProdutoId = 3,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 71,
+                            CorId = (byte)6,
+                            ProdutoId = 3,
+                            QtdeEstoque = 36,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 72,
+                            CorId = (byte)6,
+                            ProdutoId = 3,
+                            QtdeEstoque = 46,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 73,
+                            CorId = (byte)1,
+                            ProdutoId = 4,
+                            QtdeEstoque = 49,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 74,
+                            CorId = (byte)1,
+                            ProdutoId = 4,
+                            QtdeEstoque = 8,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 75,
+                            CorId = (byte)1,
+                            ProdutoId = 4,
+                            QtdeEstoque = 23,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 76,
+                            CorId = (byte)1,
+                            ProdutoId = 4,
+                            QtdeEstoque = 31,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 77,
+                            CorId = (byte)2,
+                            ProdutoId = 4,
+                            QtdeEstoque = 33,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 78,
+                            CorId = (byte)2,
+                            ProdutoId = 4,
+                            QtdeEstoque = 11,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 79,
+                            CorId = (byte)2,
+                            ProdutoId = 4,
+                            QtdeEstoque = 2,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 80,
+                            CorId = (byte)2,
+                            ProdutoId = 4,
+                            QtdeEstoque = 27,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 81,
+                            CorId = (byte)3,
+                            ProdutoId = 4,
+                            QtdeEstoque = 18,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 82,
+                            CorId = (byte)3,
+                            ProdutoId = 4,
+                            QtdeEstoque = 49,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 83,
+                            CorId = (byte)3,
+                            ProdutoId = 4,
+                            QtdeEstoque = 35,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 84,
+                            CorId = (byte)3,
+                            ProdutoId = 4,
+                            QtdeEstoque = 22,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 85,
+                            CorId = (byte)4,
+                            ProdutoId = 4,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 86,
+                            CorId = (byte)4,
+                            ProdutoId = 4,
+                            QtdeEstoque = 0,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 87,
+                            CorId = (byte)4,
+                            ProdutoId = 4,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 88,
+                            CorId = (byte)4,
+                            ProdutoId = 4,
+                            QtdeEstoque = 34,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 89,
+                            CorId = (byte)5,
+                            ProdutoId = 4,
+                            QtdeEstoque = 35,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 90,
+                            CorId = (byte)5,
+                            ProdutoId = 4,
+                            QtdeEstoque = 22,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 91,
+                            CorId = (byte)5,
+                            ProdutoId = 4,
+                            QtdeEstoque = 0,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 92,
+                            CorId = (byte)5,
+                            ProdutoId = 4,
+                            QtdeEstoque = 0,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 93,
+                            CorId = (byte)6,
+                            ProdutoId = 4,
+                            QtdeEstoque = 18,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 94,
+                            CorId = (byte)6,
+                            ProdutoId = 4,
+                            QtdeEstoque = 43,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 95,
+                            CorId = (byte)6,
+                            ProdutoId = 4,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 96,
+                            CorId = (byte)6,
+                            ProdutoId = 4,
+                            QtdeEstoque = 48,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 97,
+                            CorId = (byte)1,
+                            ProdutoId = 5,
+                            QtdeEstoque = 24,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 98,
+                            CorId = (byte)1,
+                            ProdutoId = 5,
+                            QtdeEstoque = 6,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 99,
+                            CorId = (byte)1,
+                            ProdutoId = 5,
+                            QtdeEstoque = 24,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 100,
+                            CorId = (byte)1,
+                            ProdutoId = 5,
+                            QtdeEstoque = 18,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 101,
+                            CorId = (byte)2,
+                            ProdutoId = 5,
+                            QtdeEstoque = 11,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 102,
+                            CorId = (byte)2,
+                            ProdutoId = 5,
+                            QtdeEstoque = 2,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 103,
+                            CorId = (byte)2,
+                            ProdutoId = 5,
+                            QtdeEstoque = 47,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 104,
+                            CorId = (byte)2,
+                            ProdutoId = 5,
+                            QtdeEstoque = 9,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 105,
+                            CorId = (byte)3,
+                            ProdutoId = 5,
+                            QtdeEstoque = 41,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 106,
+                            CorId = (byte)3,
+                            ProdutoId = 5,
+                            QtdeEstoque = 16,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 107,
+                            CorId = (byte)3,
+                            ProdutoId = 5,
+                            QtdeEstoque = 41,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 108,
+                            CorId = (byte)3,
+                            ProdutoId = 5,
+                            QtdeEstoque = 27,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 109,
+                            CorId = (byte)4,
+                            ProdutoId = 5,
+                            QtdeEstoque = 27,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 110,
+                            CorId = (byte)4,
+                            ProdutoId = 5,
+                            QtdeEstoque = 4,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 111,
+                            CorId = (byte)4,
+                            ProdutoId = 5,
+                            QtdeEstoque = 35,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 112,
+                            CorId = (byte)4,
+                            ProdutoId = 5,
+                            QtdeEstoque = 21,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 113,
+                            CorId = (byte)5,
+                            ProdutoId = 5,
+                            QtdeEstoque = 29,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 114,
+                            CorId = (byte)5,
+                            ProdutoId = 5,
+                            QtdeEstoque = 24,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 115,
+                            CorId = (byte)5,
+                            ProdutoId = 5,
+                            QtdeEstoque = 20,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 116,
+                            CorId = (byte)5,
+                            ProdutoId = 5,
+                            QtdeEstoque = 18,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 117,
+                            CorId = (byte)6,
+                            ProdutoId = 5,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 118,
+                            CorId = (byte)6,
+                            ProdutoId = 5,
+                            QtdeEstoque = 9,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 119,
+                            CorId = (byte)6,
+                            ProdutoId = 5,
+                            QtdeEstoque = 4,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 120,
+                            CorId = (byte)6,
+                            ProdutoId = 5,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 121,
+                            CorId = (byte)1,
+                            ProdutoId = 6,
+                            QtdeEstoque = 11,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 122,
+                            CorId = (byte)1,
+                            ProdutoId = 6,
+                            QtdeEstoque = 8,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 123,
+                            CorId = (byte)1,
+                            ProdutoId = 6,
+                            QtdeEstoque = 48,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 124,
+                            CorId = (byte)1,
+                            ProdutoId = 6,
+                            QtdeEstoque = 42,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 125,
+                            CorId = (byte)2,
+                            ProdutoId = 6,
+                            QtdeEstoque = 29,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 126,
+                            CorId = (byte)2,
+                            ProdutoId = 6,
+                            QtdeEstoque = 45,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 127,
+                            CorId = (byte)2,
+                            ProdutoId = 6,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 128,
+                            CorId = (byte)2,
+                            ProdutoId = 6,
+                            QtdeEstoque = 16,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 129,
+                            CorId = (byte)3,
+                            ProdutoId = 6,
+                            QtdeEstoque = 40,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 130,
+                            CorId = (byte)3,
+                            ProdutoId = 6,
+                            QtdeEstoque = 41,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 131,
+                            CorId = (byte)3,
+                            ProdutoId = 6,
+                            QtdeEstoque = 25,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 132,
+                            CorId = (byte)3,
+                            ProdutoId = 6,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 133,
+                            CorId = (byte)4,
+                            ProdutoId = 6,
+                            QtdeEstoque = 47,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 134,
+                            CorId = (byte)4,
+                            ProdutoId = 6,
+                            QtdeEstoque = 49,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 135,
+                            CorId = (byte)4,
+                            ProdutoId = 6,
+                            QtdeEstoque = 20,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 136,
+                            CorId = (byte)4,
+                            ProdutoId = 6,
+                            QtdeEstoque = 48,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 137,
+                            CorId = (byte)5,
+                            ProdutoId = 6,
+                            QtdeEstoque = 48,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 138,
+                            CorId = (byte)5,
+                            ProdutoId = 6,
+                            QtdeEstoque = 38,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 139,
+                            CorId = (byte)5,
+                            ProdutoId = 6,
+                            QtdeEstoque = 0,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 140,
+                            CorId = (byte)5,
+                            ProdutoId = 6,
+                            QtdeEstoque = 11,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 141,
+                            CorId = (byte)6,
+                            ProdutoId = 6,
+                            QtdeEstoque = 20,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 142,
+                            CorId = (byte)6,
+                            ProdutoId = 6,
+                            QtdeEstoque = 45,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 143,
+                            CorId = (byte)6,
+                            ProdutoId = 6,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 144,
+                            CorId = (byte)6,
+                            ProdutoId = 6,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 145,
+                            CorId = (byte)1,
+                            ProdutoId = 7,
+                            QtdeEstoque = 40,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 146,
+                            CorId = (byte)1,
+                            ProdutoId = 7,
+                            QtdeEstoque = 10,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 147,
+                            CorId = (byte)1,
+                            ProdutoId = 7,
+                            QtdeEstoque = 3,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 148,
+                            CorId = (byte)1,
+                            ProdutoId = 7,
+                            QtdeEstoque = 3,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 149,
+                            CorId = (byte)2,
+                            ProdutoId = 7,
+                            QtdeEstoque = 36,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 150,
+                            CorId = (byte)2,
+                            ProdutoId = 7,
+                            QtdeEstoque = 43,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 151,
+                            CorId = (byte)2,
+                            ProdutoId = 7,
+                            QtdeEstoque = 17,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 152,
+                            CorId = (byte)2,
+                            ProdutoId = 7,
+                            QtdeEstoque = 5,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 153,
+                            CorId = (byte)3,
+                            ProdutoId = 7,
+                            QtdeEstoque = 23,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 154,
+                            CorId = (byte)3,
+                            ProdutoId = 7,
+                            QtdeEstoque = 27,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 155,
+                            CorId = (byte)3,
+                            ProdutoId = 7,
+                            QtdeEstoque = 12,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 156,
+                            CorId = (byte)3,
+                            ProdutoId = 7,
+                            QtdeEstoque = 2,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 157,
+                            CorId = (byte)4,
+                            ProdutoId = 7,
+                            QtdeEstoque = 13,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 158,
+                            CorId = (byte)4,
+                            ProdutoId = 7,
+                            QtdeEstoque = 16,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 159,
+                            CorId = (byte)4,
+                            ProdutoId = 7,
+                            QtdeEstoque = 0,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 160,
+                            CorId = (byte)4,
+                            ProdutoId = 7,
+                            QtdeEstoque = 33,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 161,
+                            CorId = (byte)5,
+                            ProdutoId = 7,
+                            QtdeEstoque = 14,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 162,
+                            CorId = (byte)5,
+                            ProdutoId = 7,
+                            QtdeEstoque = 26,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 163,
+                            CorId = (byte)5,
+                            ProdutoId = 7,
+                            QtdeEstoque = 3,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 164,
+                            CorId = (byte)5,
+                            ProdutoId = 7,
+                            QtdeEstoque = 26,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 165,
+                            CorId = (byte)6,
+                            ProdutoId = 7,
+                            QtdeEstoque = 36,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 166,
+                            CorId = (byte)6,
+                            ProdutoId = 7,
+                            QtdeEstoque = 26,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 167,
+                            CorId = (byte)6,
+                            ProdutoId = 7,
+                            QtdeEstoque = 32,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 168,
+                            CorId = (byte)6,
+                            ProdutoId = 7,
+                            QtdeEstoque = 37,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 169,
+                            CorId = (byte)1,
+                            ProdutoId = 8,
+                            QtdeEstoque = 22,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 170,
+                            CorId = (byte)1,
+                            ProdutoId = 8,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 171,
+                            CorId = (byte)1,
+                            ProdutoId = 8,
+                            QtdeEstoque = 9,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 172,
+                            CorId = (byte)1,
+                            ProdutoId = 8,
+                            QtdeEstoque = 49,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 173,
+                            CorId = (byte)2,
+                            ProdutoId = 8,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 174,
+                            CorId = (byte)2,
+                            ProdutoId = 8,
+                            QtdeEstoque = 15,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 175,
+                            CorId = (byte)2,
+                            ProdutoId = 8,
+                            QtdeEstoque = 29,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 176,
+                            CorId = (byte)2,
+                            ProdutoId = 8,
+                            QtdeEstoque = 42,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 177,
+                            CorId = (byte)3,
+                            ProdutoId = 8,
+                            QtdeEstoque = 2,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 178,
+                            CorId = (byte)3,
+                            ProdutoId = 8,
+                            QtdeEstoque = 42,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 179,
+                            CorId = (byte)3,
+                            ProdutoId = 8,
+                            QtdeEstoque = 1,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 180,
+                            CorId = (byte)3,
+                            ProdutoId = 8,
+                            QtdeEstoque = 17,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 181,
+                            CorId = (byte)4,
+                            ProdutoId = 8,
+                            QtdeEstoque = 2,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 182,
+                            CorId = (byte)4,
+                            ProdutoId = 8,
+                            QtdeEstoque = 2,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 183,
+                            CorId = (byte)4,
+                            ProdutoId = 8,
+                            QtdeEstoque = 31,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 184,
+                            CorId = (byte)4,
+                            ProdutoId = 8,
+                            QtdeEstoque = 42,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 185,
+                            CorId = (byte)5,
+                            ProdutoId = 8,
+                            QtdeEstoque = 19,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 186,
+                            CorId = (byte)5,
+                            ProdutoId = 8,
+                            QtdeEstoque = 4,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 187,
+                            CorId = (byte)5,
+                            ProdutoId = 8,
+                            QtdeEstoque = 12,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 188,
+                            CorId = (byte)5,
+                            ProdutoId = 8,
+                            QtdeEstoque = 14,
+                            TamanhoId = (byte)4
+                        },
+                        new
+                        {
+                            Id = 189,
+                            CorId = (byte)6,
+                            ProdutoId = 8,
+                            QtdeEstoque = 44,
+                            TamanhoId = (byte)1
+                        },
+                        new
+                        {
+                            Id = 190,
+                            CorId = (byte)6,
+                            ProdutoId = 8,
+                            QtdeEstoque = 25,
+                            TamanhoId = (byte)2
+                        },
+                        new
+                        {
+                            Id = 191,
+                            CorId = (byte)6,
+                            ProdutoId = 8,
+                            QtdeEstoque = 30,
+                            TamanhoId = (byte)3
+                        },
+                        new
+                        {
+                            Id = 192,
+                            CorId = (byte)6,
+                            ProdutoId = 8,
+                            QtdeEstoque = 1,
+                            TamanhoId = (byte)4
                         });
                 });
 
@@ -474,6 +2173,97 @@ namespace CozaStore.Migrations
                             ProdutoId = 1,
                             ArquivoFoto = "/images/produtos/1/1.jpg",
                             Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 2,
+                            ArquivoFoto = "/images/produtos/2/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 3,
+                            ArquivoFoto = "/images/produtos/3/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 4,
+                            ArquivoFoto = "/images/produtos/4/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 5,
+                            ArquivoFoto = "/images/produtos/5/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 6,
+                            ArquivoFoto = "/images/produtos/6/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 7,
+                            ArquivoFoto = "/images/produtos/7/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 8,
+                            ArquivoFoto = "/images/produtos/8/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 9,
+                            ArquivoFoto = "/images/produtos/9/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 10,
+                            ArquivoFoto = "/images/produtos/10/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 11,
+                            ArquivoFoto = "/images/produtos/11/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 1,
+                            ProdutoId = 12,
+                            ArquivoFoto = "/images/produtos/12/1.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ProdutoId = 5,
+                            ArquivoFoto = "/images/produtos/5/2.jpg",
+                            Destaque = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ProdutoId = 5,
+                            ArquivoFoto = "/images/produtos/5/3.jpg",
+                            Destaque = true
                         });
                 });
 
@@ -497,6 +2287,61 @@ namespace CozaStore.Migrations
                         new
                         {
                             ProdutoId = 1,
+                            TagId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 2,
+                            TagId = (byte)3
+                        },
+                        new
+                        {
+                            ProdutoId = 3,
+                            TagId = (byte)4
+                        },
+                        new
+                        {
+                            ProdutoId = 4,
+                            TagId = (byte)2
+                        },
+                        new
+                        {
+                            ProdutoId = 5,
+                            TagId = (byte)5
+                        },
+                        new
+                        {
+                            ProdutoId = 6,
+                            TagId = (byte)3
+                        },
+                        new
+                        {
+                            ProdutoId = 7,
+                            TagId = (byte)4
+                        },
+                        new
+                        {
+                            ProdutoId = 8,
+                            TagId = (byte)5
+                        },
+                        new
+                        {
+                            ProdutoId = 9,
+                            TagId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 10,
+                            TagId = (byte)5
+                        },
+                        new
+                        {
+                            ProdutoId = 11,
+                            TagId = (byte)3
+                        },
+                        new
+                        {
+                            ProdutoId = 12,
                             TagId = (byte)1
                         });
                 });
@@ -613,7 +2458,7 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "2e17229d-6dc6-4080-8e3a-8c99b7a28987",
+                            UsuarioId = "2ff54731-834c-46c5-9e68-a6a0aae5e796",
                             DataNascimento = new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/users/avatar.png",
                             Nome = "José Antonio Gallo Junior"
@@ -648,22 +2493,22 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "64dc0628-70e5-4aba-a6e7-adbcb5e938d4",
-                            ConcurrencyStamp = "46b49255-6f9b-4733-83f7-c7286867b098",
+                            Id = "bb865f53-4805-4fc6-8900-d5c66a0b2016",
+                            ConcurrencyStamp = "704f692f-4080-4df2-a91c-7cf0d0f1abf8",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "58c318a3-bffb-4fd5-af32-ea4d1da6eace",
-                            ConcurrencyStamp = "ece47271-38ae-417d-9131-3fa745d398b9",
+                            Id = "7c814840-ed7b-4a9d-b162-fb7947ad1ff8",
+                            ConcurrencyStamp = "cd77f02b-4928-4e69-87eb-db10ef0fd411",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         },
                         new
                         {
-                            Id = "52c8eae2-21d3-4590-9c6a-24d06eac0f17",
-                            ConcurrencyStamp = "52d41702-5b1f-4f4e-8650-a6f9eda11c8d",
+                            Id = "29625af0-ab72-4124-8284-312d76b2f9b7",
+                            ConcurrencyStamp = "f0545117-6db2-45ec-9a24-a87f4e8dcd85",
                             Name = "Cliente",
                             NormalizedName = "CLIENTE"
                         });
@@ -758,18 +2603,18 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2e17229d-6dc6-4080-8e3a-8c99b7a28987",
+                            Id = "2ff54731-834c-46c5-9e68-a6a0aae5e796",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "86d17fa1-ab23-4601-bb52-2fda2febd6b1",
+                            ConcurrencyStamp = "e20415ef-716c-4b16-9f13-a17478dd59ac",
                             Email = "gallojunior@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "GALLOJUNIOR@GMAIL.COM",
                             NormalizedUserName = "GALLOJUNIOR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEk7XI4TevtPwh/ETZM/AoQcR6t7p3mCHPi58Y0LXYGcXSeiLosQIeWgy45Iv9Txdw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEF2Txj4AlrUVgWXWvG+/daJ7S8F0/P8jCdOBsDrO0GeduDMOsVTq80xtYr9gqCGgDw==",
                             PhoneNumber = "14912345678",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "cf1362cd-e733-4379-bb76-d9cbdbaf2790",
+                            SecurityStamp = "ec354784-df16-4296-aecd-9fac33fca542",
                             TwoFactorEnabled = false,
                             UserName = "GalloJunior"
                         });
@@ -837,18 +2682,18 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "2e17229d-6dc6-4080-8e3a-8c99b7a28987",
-                            RoleId = "64dc0628-70e5-4aba-a6e7-adbcb5e938d4"
+                            UserId = "2ff54731-834c-46c5-9e68-a6a0aae5e796",
+                            RoleId = "bb865f53-4805-4fc6-8900-d5c66a0b2016"
                         },
                         new
                         {
-                            UserId = "2e17229d-6dc6-4080-8e3a-8c99b7a28987",
-                            RoleId = "58c318a3-bffb-4fd5-af32-ea4d1da6eace"
+                            UserId = "2ff54731-834c-46c5-9e68-a6a0aae5e796",
+                            RoleId = "7c814840-ed7b-4a9d-b162-fb7947ad1ff8"
                         },
                         new
                         {
-                            UserId = "2e17229d-6dc6-4080-8e3a-8c99b7a28987",
-                            RoleId = "52c8eae2-21d3-4590-9c6a-24d06eac0f17"
+                            UserId = "2ff54731-834c-46c5-9e68-a6a0aae5e796",
+                            RoleId = "29625af0-ab72-4124-8284-312d76b2f9b7"
                         });
                 });
 

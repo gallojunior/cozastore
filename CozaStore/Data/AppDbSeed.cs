@@ -157,59 +157,222 @@ public class AppDbSeed
                 PrecoDesconto = 20.64M,
                 SKU = "CAM-01",
                 Destaque = true
+            },
+            new Produto() {
+                Id = 2,
+                Nome = "Camiseta Herschel supply",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 35.31M,
+                PrecoDesconto = 35.31M,
+                SKU = "CAM-02",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 3,
+                Nome = "Camiseta Quadriculada",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 25.50M,
+                PrecoDesconto = 25.50M,
+                SKU = "CAM-03",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 4,
+                Nome = "Casaco Classic Trench",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 75.25M,
+                PrecoDesconto = 75.25M,
+                SKU = "CAS-01",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 5,
+                Nome = "Lightweight Jacket",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 53.0M,
+                PrecoDesconto = 53.0M,
+                SKU = "COJ-01",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 6,
+                Nome = "Femme T-Shirt In Stripe",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 25.85M,
+                PrecoDesconto = 25.85M,
+                SKU = "CAM-06",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 7,
+                Nome = "Camiseta Herschel supply",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 63.16M,
+                PrecoDesconto = 63.16M,
+                SKU = "CAM-09",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 8,
+                Nome = "Camiseta T-Shirt with Sleeve",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 18.49M,
+                PrecoDesconto = 18.49M,
+                SKU = "CAM-14",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 9,
+                Nome = "Relógio Vintage Classic",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 93.20M,
+                PrecoDesconto = 93.20M,
+                SKU = "REL-01",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 10,
+                Nome = "Tênis All Star Hi Plimsolls",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 75.0M,
+                PrecoDesconto = 75.0M,
+                SKU = "CAL-09",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 11,
+                Nome = "Cinto de Couro",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 63.15M,
+                PrecoDesconto = 63.15M,
+                SKU = "CIN-04",
+                Destaque = true
+            },
+            new Produto() {
+                Id = 12,
+                Nome = "Mini Silver Mesh Watch",
+                DescricaoResumida = "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+                DescricaoCompleta = "Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.",
+                Preco = 86.85M,
+                PrecoDesconto = 86.85M,
+                SKU = "REL-04",
+                Destaque = true
             }
         };
         builder.Entity<Produto>().HasData(produtos);
-        
+
         List<ProdutoCategoria> produtoCategorias = new() {
             new ProdutoCategoria() {
                 ProdutoId = 1,
                 CategoriaId = 1
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 2,
+                CategoriaId = 1
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 3,
+                CategoriaId = 2
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 4,
+                CategoriaId = 1
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 5,
+                CategoriaId = 2
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 6,
+                CategoriaId = 1
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 7,
+                CategoriaId = 2
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 8,
+                CategoriaId = 1
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 9,
+                CategoriaId = 6
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 10,
+                CategoriaId = 5
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 11,
+                CategoriaId = 3
+            },
+            new ProdutoCategoria() {
+                ProdutoId = 12,
+                CategoriaId = 6
             }
         };
         builder.Entity<ProdutoCategoria>().HasData(produtoCategorias);
 
-        List<ProdutoTag> produtoTags = new() {
-            new ProdutoTag() {
-                ProdutoId = 1,
-                TagId = 1
-            }
-        };
+        List<ProdutoTag> produtoTags = new();
+        for (int i = 1; i <= 12; i++)
+            produtoTags.Add(new ProdutoTag()
+            {
+                ProdutoId = i,
+                TagId = (byte)(new Random().Next(5) + 1)
+            });
         builder.Entity<ProdutoTag>().HasData(produtoTags);
 
-        List<ProdutoFoto> produtoFotos = new() {
-            new ProdutoFoto() {
+        List<ProdutoFoto> produtoFotos = new();
+        for (int i = 1; i <= 12; i++)
+            produtoFotos.Add(new ProdutoFoto()
+            {
                 Id = 1,
-                ProdutoId = 1,
-                ArquivoFoto = @"/images/produtos/1/1.jpg",
+                ProdutoId = i,
+                ArquivoFoto = $"/images/produtos/{i}/1.jpg",
                 Destaque = true
-            }
-        };
+            });
+        produtoFotos.Add(new ProdutoFoto()
+        {
+            Id = 2,
+            ProdutoId = 5,
+            ArquivoFoto = @"/images/produtos/5/2.jpg",
+            Destaque = false
+        });
+        produtoFotos.Add(new ProdutoFoto()
+        {
+            Id = 3,
+            ProdutoId = 5,
+            ArquivoFoto = $"/images/produtos/5/3.jpg",
+            Destaque = false
+        });
         builder.Entity<ProdutoFoto>().HasData(produtoFotos);
 
-        List<ProdutoEstoque> produtoEstoque = new() {
-            new ProdutoEstoque() {
-                Id = 1,
-                ProdutoId = 1,
-                CorId = 6,
-                TamanhoId = 1,
-                QtdeEstoque = 10
-            },
-            new ProdutoEstoque() {
-                Id = 2,
-                ProdutoId = 1,
-                CorId = 6,
-                TamanhoId = 2,
-                QtdeEstoque = 10
-            },
-            new ProdutoEstoque() {
-                Id = 3,
-                ProdutoId = 1,
-                CorId = 6,
-                TamanhoId = 3,
-                QtdeEstoque = 10
-            },
-        };
+        List<ProdutoEstoque> produtoEstoque = new();
+        int id = 1;
+        for (int p = 1; p <= 8; p++)
+            for (byte c = 1; c <= 6; c++)
+                for (byte t = 1; t <= 4; t++)
+                {
+                    produtoEstoque.Add(new ProdutoEstoque()
+                    {
+                        Id = id,
+                        ProdutoId = p,
+                        CorId = c,
+                        TamanhoId = t,
+                        QtdeEstoque = new Random().Next(50)
+                    });
+                    id += 1;
+                }
         builder.Entity<ProdutoEstoque>().HasData(produtoEstoque);
         #endregion
 
