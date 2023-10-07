@@ -405,13 +405,11 @@ public class AppDbSeed
         List<IdentityUser> users = new(){
             new IdentityUser(){
                 Id = Guid.NewGuid().ToString(),
-                Email = "gallojunior@gmail.com",
-                NormalizedEmail = "GALLOJUNIOR@GMAIL.COM",
-                UserName = "GalloJunior",
-                NormalizedUserName = "GALLOJUNIOR",
+                Email = "admin@cozastore.com",
+                NormalizedEmail = "ADMIN@COZASTORE.COM",
+                UserName = "Admin",
+                NormalizedUserName = "ADMIN",
                 LockoutEnabled = false,
-                PhoneNumber = "14912345678",
-                PhoneNumberConfirmed = true,
                 EmailConfirmed = true,
             }
         };

@@ -129,9 +129,9 @@ public class AccountController : Controller
                     new { userId, code },
                     protocol: Request.Scheme);
 
-                await _userManager.AddToRoleAsync(user, "Usuário");
+                await _userManager.AddToRoleAsync(user, "Cliente");
 
-                await _emailSender.SendEmailAsync(register.Email, "EtecBook - Criação de Conta",
+                await _emailSender.SendEmailAsync(register.Email, "CozaStore - Criação de Conta",
                     $"Por favor, confirme a criação de sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicando aqui</a>.");
 
                 // Cria a conta pessoal do usuário
@@ -139,7 +139,7 @@ public class AccountController : Controller
                 {
                     UsuarioId = userId,
                     DataNascimento = register.DataNascimento,
-                    Nome = register.Nome,
+                    Nome = register.Nome
                 };
                 if (Foto != null)
                 {
