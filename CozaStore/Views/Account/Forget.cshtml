@@ -1,13 +1,12 @@
-@model CozaStore.ViewModels.Account.LoginVM
+@model CozaStore.ViewModels.Account.ForgetVM
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Recuperar Conta";
     Layout = "~/Views/Shared/_LayoutAccount.cshtml";
 }
 
 <div class="position-relative">
     <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner py-4">
-            <!-- Login -->
             <div class="card p-2">
                 <!-- Logo -->
                 <div class="app-brand justify-content-center mt-5">
@@ -19,53 +18,29 @@
 
                 <div class="card-body mt-2">
                     <h4 class="mb-2 text-center">Bem Vindo a CozaStore!</h4>
-                    <p class="mb-4 text-center">Faça login para ter acesso a mais opções!!</p>
+                    <p class="mb-4 text-center">Informe seu email para recuperar sua senha</p>
 
-                    <form id="formAuthentication" class="mb-3" method="post">
+                    <form id="formAuthentication" class="mb-3" method="POST">
                         <div asp-validation-summary="ModelOnly" hidden></div>
-                        <input asp-for="UrlRetorno" type="hidden">
                         <div class="form-floating form-floating-outline mb-3">
                             <input asp-for="Email" class="form-control" autofocus />
                             <label asp-for="Email"></label>
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <div class="form-password-toggle">
-                                <div class="input-group input-group-merge">
-                                    <div class="form-floating form-floating-outline">
-                                        <input asp-for="Senha" class="form-control" />
-                                        <label asp-for="Senha"></label>
-                                    </div>
-                                    <span class="input-group-text cursor-pointer">
-                                        <i class="mdi mdi-eye-off-outline"></i>
-                                    </span>
-                                </div>
-                                <span asp-validation-for="Senha" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="mb-3 d-flex justify-content-between">
-                            <div class="form-check">
-                                <input class="form-check-input" asp-for="Lembrar" />
-                                <label class="form-check-label" asp-for="Lembrar"></label>
-                            </div>
-                            <a asp-action="Forget" asp-controller="Account" class="float-end mb-1">
-                                <span>Esqueci minha Senha?</span>
-                            </a>
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary d-grid w-100" type="submit">Entrar</button>
+                            <button class="btn btn-primary d-grid w-100" type="submit">Recuperar</button>
                         </div>
                     </form>
 
                     <p class="text-center">
-                        <span>Novo por aqui?</span>
-                        <a asp-action="Register" asp-controller="Account">
-                            <span>Crie sua conta</span>
+                        <span>Lembrou sua Senha</span>
+                        <a asp-action="Login" asp-controller="Account">
+                            <span>Faça Login Aqui</span>
                         </a>
                     </p>
                 </div>
             </div>
-            <!-- /Login -->
+
             <img src="~/assets/img/illustrations/tree-3.png" alt="auth-tree"
                 class="authentication-image-object-left d-none d-lg-block" />
             <img src="~/assets/img/illustrations/auth-basic-mask-light.png"
@@ -88,7 +63,7 @@
         });
         if (mensagemErro != '') {
             Swal.fire(
-                'Acesso Negado',
+                'Problemas ao Recuperar Senha',
                 mensagemErro,
                 'error'
             );

@@ -32,5 +32,6 @@ public class RegisterVM
     public string ConfirmacaoSenha { get; set; }
 
     public string Foto { get; set; }
+    
     public bool Termos { get; set; } = false;
 }

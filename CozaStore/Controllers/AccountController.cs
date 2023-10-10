@@ -82,7 +82,7 @@ public class AccountController : Controller
                 _logger.LogWarning($"Usuário {login.Email} está bloqueado");
                 return RedirectToAction("Lockout");
             }
-            ModelState.AddModelError("login", "Usuário e/ou Senha Inválidos!!!");
+            ModelState.AddModelError(string.Empty, "Usuário e/ou Senha Inválidos!!!");
         }
         return View(login);
     }
@@ -190,6 +190,13 @@ public class AccountController : Controller
         code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
         var result = await _userManager.ConfirmEmailAsync(user, code);
         return View(result.Succeeded);
+    }
+
+
+    [HttpGet]
+    public IActionResult Forget()
+    {
+        return View();
     }
 
 

@@ -11,7 +11,7 @@
             <div class="card p-2">
                 <!-- Logo -->
                 <div class="app-brand justify-content-center mt-5">
-                    <a href="index.html" class="app-brand-link gap-2">
+                    <a asp-action="Index" asp-controller="Home" class="app-brand-link gap-2">
                         <img src="~/images/icons/logo-01.png" width="200">
                     </a>
                 </div>
@@ -21,19 +21,23 @@
                     <p class="mb-4 text-center">Crie sua conta agora e aproveite nossas ofertas!</p>
 
                     <form id="formAuthentication" class="mb-3" method="POST" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" hidden></div>
                         <div class="form-floating form-floating-outline mb-3">
                             <input class="form-control" asp-for="Nome" autofocus />
                             <label asp-for="Nome"></label>
+                            <span asp-validation-for="Nome" class="text-danger"></span>
                         </div>
                         <div class="form-floating form-floating-outline mb-3">
                             <input class="form-control" asp-for="Email"/>
                             <label asp-for="Email"></label>
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         <div class="row">
                             <div class="col-sm-8">
                                 <div class="form-floating form-floating-outline mb-3">
                                     <input class="form-control" asp-for="DataNascimento"/>
                                     <label asp-for="DataNascimento"></label>
+                                    <span asp-validation-for="DataNascimento" class="text-danger"></span>
                                 </div>
                                 <div class="mb-3 form-password-toggle">
                                     <div class="input-group input-group-merge">
@@ -41,9 +45,10 @@
                                             <input class="form-control" asp-for="Senha"/>
                                             <label asp-for="Senha"></label>
                                         </div>
-                                        <span class="input-group-text cursor-pointer"><i
-                                                class="mdi mdi-eye-off-outline"></i></span>
+                                        <span class="input-group-text cursor-pointer">
+                                            <i class="mdi mdi-eye-off-outline"></i></span>
                                     </div>
+                                    <span asp-validation-for="Senha" class="text-danger"></span>
                                 </div>
                                 <div class="mb-3 form-password-toggle">
                                     <div class="input-group input-group-merge">
@@ -54,6 +59,7 @@
                                         <span class="input-group-text cursor-pointer"><i
                                                 class="mdi mdi-eye-off-outline"></i></span>
                                     </div>
+                                    <span asp-validation-for="ConfirmacaoSenha" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-sm-4" style="min-height: 100%; vertical-align:middle">
@@ -66,14 +72,14 @@
 
                         <div class="mb-3">
                             <div class="form-check">
-                                <input class="form-check-input" asp-for="Termos" />
+                                <input class="form-check-input" asp-for="Termos" onclick="verificarTermos()"/>
                                 <label class="form-check-label" asp-for="Termos">
                                     Eu concordo com os
                                     <a href="javascript:void(0);">termos e politica de privacidade</a>
                                 </label>
                             </div>
                         </div>
-                        <button class="btn btn-primary d-grid w-100">Criar Conta</button>
+                        <button id="submit" class="btn btn-primary d-grid w-100" disabled>Criar Conta</button>
                     </form>
 
                     <p class="text-center">
@@ -127,6 +133,18 @@
                 }
             });
         });
+
+        function verificarTermos() {
+            let t = document.getElementById("Termos");
+            let s = document.getElementById("submit");
+            t.value = t.checked;
+            if (t.checked) {
+                s.removeAttribute("disabled");
+            } else {
+                s.setAttribute("disabled", true);
+            }
+            console.log(s);
+        }
 
     </script>
 }
