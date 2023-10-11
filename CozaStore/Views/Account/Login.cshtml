@@ -6,7 +6,7 @@
 
 <div class="position-relative">
     <div class="authentication-wrapper authentication-basic container-p-y">
-        <div class="authentication-inner py-4">
+        <div class="authentication-inner py-4" style="max-width: 600px;">
             <!-- Login -->
             <div class="card p-2">
                 <!-- Logo -->
@@ -43,12 +43,12 @@
                                 <span asp-validation-for="Senha" class="text-danger"></span>
                             </div>
                         </div>
-                        <div class="mb-3 d-flex justify-content-between">
-                            <div class="form-check">
+                        <div class="row mb-3 px-3">
+                            <div class="form-check col-lg-6 col-sm-12">
                                 <input class="form-check-input" asp-for="Lembrar" />
                                 <label class="form-check-label" asp-for="Lembrar"></label>
                             </div>
-                            <a asp-action="Forget" asp-controller="Account" class="float-end mb-1">
+                            <a asp-action="Forget" asp-controller="Account" class="col-lg-6 px-0 col-sm-12 mb-1 text-end">
                                 <span>Esqueci minha Senha?</span>
                             </a>
                         </div>

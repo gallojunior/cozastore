@@ -9,5 +9,7 @@ public class ForgetVM
     [EmailAddress(ErrorMessage = "Por favor, informe um Email Válido!")]
     [StringLength(100, ErrorMessage = "O Email deve possuir no máximo 100 caracteres")]
     public string Email { get; set; }
+
+    public bool Enviado { get; set; } = false;
 }
 

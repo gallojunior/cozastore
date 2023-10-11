@@ -53,7 +53,7 @@ public class AccountController : Controller
         };
         return View(login);
     }
-    
+
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -101,7 +101,8 @@ public class AccountController : Controller
     [HttpGet]
     public IActionResult Register()
     {
-        return View();
+        RegisterVM register = new();
+        return View(register);
     }
 
 
@@ -138,7 +139,7 @@ public class AccountController : Controller
                 Usuario usuario = new()
                 {
                     UsuarioId = userId,
-                    DataNascimento = register.DataNascimento,
+                    DataNascimento = register.DataNascimento ?? DateTime.Now,
                     Nome = register.Nome
                 };
                 if (Foto != null)
@@ -154,22 +155,14 @@ public class AccountController : Controller
                 }
                 _contexto.Add(usuario);
                 await _contexto.SaveChangesAsync();
-
-                return RedirectToAction("RegisterConfirmation");
             }
             foreach (var error in result.Errors)
             {
                 ModelState.AddModelError(string.Empty, TranslateIdentityErrors.TranslateErrorMessage(error.Code));
             }
         }
+        register.Enviado = ModelState.IsValid;
         return View(register);
-    }
-
-
-    [HttpGet]
-    public IActionResult RegisterConfirmation()
-    {
-        return View();
     }
 
 
@@ -196,7 +189,73 @@ public class AccountController : Controller
     [HttpGet]
     public IActionResult Forget()
     {
-        return View();
+        ForgetVM forget = new();
+        return View(forget);
+    }
+
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Forget(ForgetVM forget)
+    {
+        if (ModelState.IsValid)
+        {
+            var user = await _userManager.FindByEmailAsync(forget.Email);
+            if (user != null && await _userManager.IsEmailConfirmedAsync(user))
+            {
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                var callbackUrl = Url.Action(
+                    action: "ResetPassword",
+                    controller: "Account",
+                    values: new { email = forget.Email, code = code },
+                    protocol: Request.Scheme);
+
+                await _emailSender.SendEmailAsync(
+                    email: forget.Email,
+                    subject: "Recuperar Senha",
+                    htmlMessage: $"Para definir uma nova senha <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.");
+            }
+        }
+        forget.Enviado = ModelState.IsValid;
+        return View(forget);
+    }
+
+
+    [HttpGet]
+    public IActionResult ResetPassword(string email, string code)
+    {
+        if (code == null || string.IsNullOrEmpty(email))
+        {
+            return BadRequest("Solicitação Inválida!!!");
+        }
+        ResetPasswordVM reset = new()
+        {
+            //Email = email,
+            Code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code))
+        };
+        return View(reset);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPassword)
+    {
+        if (ModelState.IsValid)
+        {
+            var user = await _userManager.FindByEmailAsync(resetPassword.Email);
+            if (user != null)
+            {
+                var result = await _userManager.ResetPasswordAsync(user, resetPassword.Code, resetPassword.Senha);
+                
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, TranslateIdentityErrors.TranslateErrorMessage(error.Code));
+                }
+            }
+        }
+        resetPassword.Enviado = ModelState.IsValid;
+        return View(resetPassword);
     }
 
 
