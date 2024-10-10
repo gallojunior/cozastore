@@ -6,13 +6,9 @@ namespace CozaStore.Models;
 public class Carrinho
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
-    [Required(ErrorMessage = "Informe o Produto")]
-    public int ProdutoId { get; set; }
-    [ForeignKey("ProdutoId")]
-    public Produto Produto { get; set; }
-    
     [Required(ErrorMessage = "Informe o Usuário")]
     public string UsuarioId { get; set; }
     [ForeignKey("UsuarioId")]

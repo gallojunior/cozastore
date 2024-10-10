@@ -6,6 +6,7 @@ namespace CozaStore.Models;
 public class ProdutoEstoque
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     [Required(ErrorMessage = "Informe o Produto")]

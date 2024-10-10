@@ -16,8 +16,9 @@ builder.Services.AddDbContext<AppDbContext>(opcoes =>
     opcoes.UseMySql(conn, version)
 );
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(
+    options => options.SignIn.RequireConfirmedAccount = true
+    ).AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddTransient<IProdutoService, ProdutoService>();

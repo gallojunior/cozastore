@@ -6,6 +6,7 @@ namespace CozaStore.Models;
 public class Tamanho
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public byte Id { get; set; }
 
     [Required(ErrorMessage = "Informe a Sigla")]

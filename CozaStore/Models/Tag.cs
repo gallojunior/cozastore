@@ -6,6 +6,7 @@ namespace CozaStore.Models;
 public class Tag
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public byte Id { get; set; }
 
     [Required(ErrorMessage = "Informe o Nome")]

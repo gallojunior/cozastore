@@ -204,7 +204,7 @@ public class AccountController : Controller
             if (user != null && await _userManager.IsEmailConfirmedAsync(user))
             {
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
-                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                //code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                 var callbackUrl = Url.Action(
                     action: "ResetPassword",
                     controller: "Account",
@@ -232,10 +232,11 @@ public class AccountController : Controller
         ResetPasswordVM reset = new()
         {
             //Email = email,
-            Code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code))
+            Code = code//Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code))
         };
         return View(reset);
     }
+
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -256,6 +257,13 @@ public class AccountController : Controller
         }
         resetPassword.Enviado = ModelState.IsValid;
         return View(resetPassword);
+    }
+
+
+    [HttpGet]
+    public IActionResult NaoEncontrado()
+    {
+        return View();
     }
 
 

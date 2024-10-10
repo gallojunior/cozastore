@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CozaStore.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231005122932_criar-banco")]
+    [Migration("20231019114314_criar-banco")]
     partial class criarbanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,16 +67,11 @@ namespace CozaStore.Migrations
                     b.Property<DateTime?>("DataModificacao")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("ProdutoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UsuarioId")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProdutoId");
 
                     b.HasIndex("UsuarioId");
 
@@ -112,6 +107,7 @@ namespace CozaStore.Migrations
             modelBuilder.Entity("CozaStore.Models.Categoria", b =>
                 {
                     b.Property<byte>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("tinyint unsigned");
 
                     b.Property<bool>("Banner")
@@ -195,6 +191,7 @@ namespace CozaStore.Migrations
             modelBuilder.Entity("CozaStore.Models.Cor", b =>
                 {
                     b.Property<byte>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("tinyint unsigned");
 
                     b.Property<string>("CodigoHexa")
@@ -611,7 +608,7 @@ namespace CozaStore.Migrations
                             Id = 1,
                             CorId = (byte)1,
                             ProdutoId = 1,
-                            QtdeEstoque = 30,
+                            QtdeEstoque = 49,
                             TamanhoId = (byte)1
                         },
                         new
@@ -619,7 +616,7 @@ namespace CozaStore.Migrations
                             Id = 2,
                             CorId = (byte)1,
                             ProdutoId = 1,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 23,
                             TamanhoId = (byte)2
                         },
                         new
@@ -627,7 +624,7 @@ namespace CozaStore.Migrations
                             Id = 3,
                             CorId = (byte)1,
                             ProdutoId = 1,
-                            QtdeEstoque = 29,
+                            QtdeEstoque = 18,
                             TamanhoId = (byte)3
                         },
                         new
@@ -635,7 +632,7 @@ namespace CozaStore.Migrations
                             Id = 4,
                             CorId = (byte)1,
                             ProdutoId = 1,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 10,
                             TamanhoId = (byte)4
                         },
                         new
@@ -643,7 +640,7 @@ namespace CozaStore.Migrations
                             Id = 5,
                             CorId = (byte)2,
                             ProdutoId = 1,
-                            QtdeEstoque = 7,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)1
                         },
                         new
@@ -651,7 +648,7 @@ namespace CozaStore.Migrations
                             Id = 6,
                             CorId = (byte)2,
                             ProdutoId = 1,
-                            QtdeEstoque = 39,
+                            QtdeEstoque = 20,
                             TamanhoId = (byte)2
                         },
                         new
@@ -659,7 +656,7 @@ namespace CozaStore.Migrations
                             Id = 7,
                             CorId = (byte)2,
                             ProdutoId = 1,
-                            QtdeEstoque = 20,
+                            QtdeEstoque = 33,
                             TamanhoId = (byte)3
                         },
                         new
@@ -667,7 +664,7 @@ namespace CozaStore.Migrations
                             Id = 8,
                             CorId = (byte)2,
                             ProdutoId = 1,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)4
                         },
                         new
@@ -675,7 +672,7 @@ namespace CozaStore.Migrations
                             Id = 9,
                             CorId = (byte)3,
                             ProdutoId = 1,
-                            QtdeEstoque = 30,
+                            QtdeEstoque = 6,
                             TamanhoId = (byte)1
                         },
                         new
@@ -683,7 +680,7 @@ namespace CozaStore.Migrations
                             Id = 10,
                             CorId = (byte)3,
                             ProdutoId = 1,
-                            QtdeEstoque = 3,
+                            QtdeEstoque = 40,
                             TamanhoId = (byte)2
                         },
                         new
@@ -691,7 +688,7 @@ namespace CozaStore.Migrations
                             Id = 11,
                             CorId = (byte)3,
                             ProdutoId = 1,
-                            QtdeEstoque = 40,
+                            QtdeEstoque = 10,
                             TamanhoId = (byte)3
                         },
                         new
@@ -699,7 +696,7 @@ namespace CozaStore.Migrations
                             Id = 12,
                             CorId = (byte)3,
                             ProdutoId = 1,
-                            QtdeEstoque = 37,
+                            QtdeEstoque = 15,
                             TamanhoId = (byte)4
                         },
                         new
@@ -707,7 +704,7 @@ namespace CozaStore.Migrations
                             Id = 13,
                             CorId = (byte)4,
                             ProdutoId = 1,
-                            QtdeEstoque = 47,
+                            QtdeEstoque = 28,
                             TamanhoId = (byte)1
                         },
                         new
@@ -715,7 +712,7 @@ namespace CozaStore.Migrations
                             Id = 14,
                             CorId = (byte)4,
                             ProdutoId = 1,
-                            QtdeEstoque = 14,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)2
                         },
                         new
@@ -723,7 +720,7 @@ namespace CozaStore.Migrations
                             Id = 15,
                             CorId = (byte)4,
                             ProdutoId = 1,
-                            QtdeEstoque = 46,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)3
                         },
                         new
@@ -731,7 +728,7 @@ namespace CozaStore.Migrations
                             Id = 16,
                             CorId = (byte)4,
                             ProdutoId = 1,
-                            QtdeEstoque = 26,
+                            QtdeEstoque = 15,
                             TamanhoId = (byte)4
                         },
                         new
@@ -747,7 +744,7 @@ namespace CozaStore.Migrations
                             Id = 18,
                             CorId = (byte)5,
                             ProdutoId = 1,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 44,
                             TamanhoId = (byte)2
                         },
                         new
@@ -755,7 +752,7 @@ namespace CozaStore.Migrations
                             Id = 19,
                             CorId = (byte)5,
                             ProdutoId = 1,
-                            QtdeEstoque = 33,
+                            QtdeEstoque = 29,
                             TamanhoId = (byte)3
                         },
                         new
@@ -763,7 +760,7 @@ namespace CozaStore.Migrations
                             Id = 20,
                             CorId = (byte)5,
                             ProdutoId = 1,
-                            QtdeEstoque = 29,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)4
                         },
                         new
@@ -771,7 +768,7 @@ namespace CozaStore.Migrations
                             Id = 21,
                             CorId = (byte)6,
                             ProdutoId = 1,
-                            QtdeEstoque = 47,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)1
                         },
                         new
@@ -779,7 +776,7 @@ namespace CozaStore.Migrations
                             Id = 22,
                             CorId = (byte)6,
                             ProdutoId = 1,
-                            QtdeEstoque = 24,
+                            QtdeEstoque = 19,
                             TamanhoId = (byte)2
                         },
                         new
@@ -787,7 +784,7 @@ namespace CozaStore.Migrations
                             Id = 23,
                             CorId = (byte)6,
                             ProdutoId = 1,
-                            QtdeEstoque = 5,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)3
                         },
                         new
@@ -795,7 +792,7 @@ namespace CozaStore.Migrations
                             Id = 24,
                             CorId = (byte)6,
                             ProdutoId = 1,
-                            QtdeEstoque = 45,
+                            QtdeEstoque = 4,
                             TamanhoId = (byte)4
                         },
                         new
@@ -803,7 +800,7 @@ namespace CozaStore.Migrations
                             Id = 25,
                             CorId = (byte)1,
                             ProdutoId = 2,
-                            QtdeEstoque = 10,
+                            QtdeEstoque = 13,
                             TamanhoId = (byte)1
                         },
                         new
@@ -811,7 +808,7 @@ namespace CozaStore.Migrations
                             Id = 26,
                             CorId = (byte)1,
                             ProdutoId = 2,
-                            QtdeEstoque = 2,
+                            QtdeEstoque = 4,
                             TamanhoId = (byte)2
                         },
                         new
@@ -819,7 +816,7 @@ namespace CozaStore.Migrations
                             Id = 27,
                             CorId = (byte)1,
                             ProdutoId = 2,
-                            QtdeEstoque = 9,
+                            QtdeEstoque = 15,
                             TamanhoId = (byte)3
                         },
                         new
@@ -827,7 +824,7 @@ namespace CozaStore.Migrations
                             Id = 28,
                             CorId = (byte)1,
                             ProdutoId = 2,
-                            QtdeEstoque = 4,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)4
                         },
                         new
@@ -835,7 +832,7 @@ namespace CozaStore.Migrations
                             Id = 29,
                             CorId = (byte)2,
                             ProdutoId = 2,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)1
                         },
                         new
@@ -843,7 +840,7 @@ namespace CozaStore.Migrations
                             Id = 30,
                             CorId = (byte)2,
                             ProdutoId = 2,
-                            QtdeEstoque = 26,
+                            QtdeEstoque = 7,
                             TamanhoId = (byte)2
                         },
                         new
@@ -851,7 +848,7 @@ namespace CozaStore.Migrations
                             Id = 31,
                             CorId = (byte)2,
                             ProdutoId = 2,
-                            QtdeEstoque = 32,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)3
                         },
                         new
@@ -859,7 +856,7 @@ namespace CozaStore.Migrations
                             Id = 32,
                             CorId = (byte)2,
                             ProdutoId = 2,
-                            QtdeEstoque = 46,
+                            QtdeEstoque = 23,
                             TamanhoId = (byte)4
                         },
                         new
@@ -867,7 +864,7 @@ namespace CozaStore.Migrations
                             Id = 33,
                             CorId = (byte)3,
                             ProdutoId = 2,
-                            QtdeEstoque = 34,
+                            QtdeEstoque = 31,
                             TamanhoId = (byte)1
                         },
                         new
@@ -875,7 +872,7 @@ namespace CozaStore.Migrations
                             Id = 34,
                             CorId = (byte)3,
                             ProdutoId = 2,
-                            QtdeEstoque = 11,
+                            QtdeEstoque = 29,
                             TamanhoId = (byte)2
                         },
                         new
@@ -883,7 +880,7 @@ namespace CozaStore.Migrations
                             Id = 35,
                             CorId = (byte)3,
                             ProdutoId = 2,
-                            QtdeEstoque = 23,
+                            QtdeEstoque = 16,
                             TamanhoId = (byte)3
                         },
                         new
@@ -891,7 +888,7 @@ namespace CozaStore.Migrations
                             Id = 36,
                             CorId = (byte)3,
                             ProdutoId = 2,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 43,
                             TamanhoId = (byte)4
                         },
                         new
@@ -899,7 +896,7 @@ namespace CozaStore.Migrations
                             Id = 37,
                             CorId = (byte)4,
                             ProdutoId = 2,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 42,
                             TamanhoId = (byte)1
                         },
                         new
@@ -907,7 +904,7 @@ namespace CozaStore.Migrations
                             Id = 38,
                             CorId = (byte)4,
                             ProdutoId = 2,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)2
                         },
                         new
@@ -915,7 +912,7 @@ namespace CozaStore.Migrations
                             Id = 39,
                             CorId = (byte)4,
                             ProdutoId = 2,
-                            QtdeEstoque = 46,
+                            QtdeEstoque = 41,
                             TamanhoId = (byte)3
                         },
                         new
@@ -923,7 +920,7 @@ namespace CozaStore.Migrations
                             Id = 40,
                             CorId = (byte)4,
                             ProdutoId = 2,
-                            QtdeEstoque = 34,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)4
                         },
                         new
@@ -931,7 +928,7 @@ namespace CozaStore.Migrations
                             Id = 41,
                             CorId = (byte)5,
                             ProdutoId = 2,
-                            QtdeEstoque = 46,
+                            QtdeEstoque = 45,
                             TamanhoId = (byte)1
                         },
                         new
@@ -939,7 +936,7 @@ namespace CozaStore.Migrations
                             Id = 42,
                             CorId = (byte)5,
                             ProdutoId = 2,
-                            QtdeEstoque = 34,
+                            QtdeEstoque = 44,
                             TamanhoId = (byte)2
                         },
                         new
@@ -947,7 +944,7 @@ namespace CozaStore.Migrations
                             Id = 43,
                             CorId = (byte)5,
                             ProdutoId = 2,
-                            QtdeEstoque = 35,
+                            QtdeEstoque = 34,
                             TamanhoId = (byte)3
                         },
                         new
@@ -955,7 +952,7 @@ namespace CozaStore.Migrations
                             Id = 44,
                             CorId = (byte)5,
                             ProdutoId = 2,
-                            QtdeEstoque = 7,
+                            QtdeEstoque = 19,
                             TamanhoId = (byte)4
                         },
                         new
@@ -963,7 +960,7 @@ namespace CozaStore.Migrations
                             Id = 45,
                             CorId = (byte)6,
                             ProdutoId = 2,
-                            QtdeEstoque = 7,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)1
                         },
                         new
@@ -971,7 +968,7 @@ namespace CozaStore.Migrations
                             Id = 46,
                             CorId = (byte)6,
                             ProdutoId = 2,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)2
                         },
                         new
@@ -979,7 +976,7 @@ namespace CozaStore.Migrations
                             Id = 47,
                             CorId = (byte)6,
                             ProdutoId = 2,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 28,
                             TamanhoId = (byte)3
                         },
                         new
@@ -987,7 +984,7 @@ namespace CozaStore.Migrations
                             Id = 48,
                             CorId = (byte)6,
                             ProdutoId = 2,
-                            QtdeEstoque = 18,
+                            QtdeEstoque = 28,
                             TamanhoId = (byte)4
                         },
                         new
@@ -995,7 +992,7 @@ namespace CozaStore.Migrations
                             Id = 49,
                             CorId = (byte)1,
                             ProdutoId = 3,
-                            QtdeEstoque = 7,
+                            QtdeEstoque = 25,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1003,7 +1000,7 @@ namespace CozaStore.Migrations
                             Id = 50,
                             CorId = (byte)1,
                             ProdutoId = 3,
-                            QtdeEstoque = 43,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1011,7 +1008,7 @@ namespace CozaStore.Migrations
                             Id = 51,
                             CorId = (byte)1,
                             ProdutoId = 3,
-                            QtdeEstoque = 4,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1019,7 +1016,7 @@ namespace CozaStore.Migrations
                             Id = 52,
                             CorId = (byte)1,
                             ProdutoId = 3,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 5,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1027,7 +1024,7 @@ namespace CozaStore.Migrations
                             Id = 53,
                             CorId = (byte)2,
                             ProdutoId = 3,
-                            QtdeEstoque = 15,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1035,7 +1032,7 @@ namespace CozaStore.Migrations
                             Id = 54,
                             CorId = (byte)2,
                             ProdutoId = 3,
-                            QtdeEstoque = 38,
+                            QtdeEstoque = 14,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1043,7 +1040,7 @@ namespace CozaStore.Migrations
                             Id = 55,
                             CorId = (byte)2,
                             ProdutoId = 3,
-                            QtdeEstoque = 24,
+                            QtdeEstoque = 10,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1051,7 +1048,7 @@ namespace CozaStore.Migrations
                             Id = 56,
                             CorId = (byte)2,
                             ProdutoId = 3,
-                            QtdeEstoque = 37,
+                            QtdeEstoque = 9,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1059,7 +1056,7 @@ namespace CozaStore.Migrations
                             Id = 57,
                             CorId = (byte)3,
                             ProdutoId = 3,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 19,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1067,7 +1064,7 @@ namespace CozaStore.Migrations
                             Id = 58,
                             CorId = (byte)3,
                             ProdutoId = 3,
-                            QtdeEstoque = 44,
+                            QtdeEstoque = 7,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1075,7 +1072,7 @@ namespace CozaStore.Migrations
                             Id = 59,
                             CorId = (byte)3,
                             ProdutoId = 3,
-                            QtdeEstoque = 35,
+                            QtdeEstoque = 14,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1083,7 +1080,7 @@ namespace CozaStore.Migrations
                             Id = 60,
                             CorId = (byte)3,
                             ProdutoId = 3,
-                            QtdeEstoque = 15,
+                            QtdeEstoque = 11,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1091,7 +1088,7 @@ namespace CozaStore.Migrations
                             Id = 61,
                             CorId = (byte)4,
                             ProdutoId = 3,
-                            QtdeEstoque = 9,
+                            QtdeEstoque = 45,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1099,7 +1096,7 @@ namespace CozaStore.Migrations
                             Id = 62,
                             CorId = (byte)4,
                             ProdutoId = 3,
-                            QtdeEstoque = 21,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1107,7 +1104,7 @@ namespace CozaStore.Migrations
                             Id = 63,
                             CorId = (byte)4,
                             ProdutoId = 3,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 22,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1115,7 +1112,7 @@ namespace CozaStore.Migrations
                             Id = 64,
                             CorId = (byte)4,
                             ProdutoId = 3,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 34,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1123,7 +1120,7 @@ namespace CozaStore.Migrations
                             Id = 65,
                             CorId = (byte)5,
                             ProdutoId = 3,
-                            QtdeEstoque = 39,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1131,7 +1128,7 @@ namespace CozaStore.Migrations
                             Id = 66,
                             CorId = (byte)5,
                             ProdutoId = 3,
-                            QtdeEstoque = 23,
+                            QtdeEstoque = 2,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1139,7 +1136,7 @@ namespace CozaStore.Migrations
                             Id = 67,
                             CorId = (byte)5,
                             ProdutoId = 3,
-                            QtdeEstoque = 2,
+                            QtdeEstoque = 10,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1147,7 +1144,7 @@ namespace CozaStore.Migrations
                             Id = 68,
                             CorId = (byte)5,
                             ProdutoId = 3,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1155,7 +1152,7 @@ namespace CozaStore.Migrations
                             Id = 69,
                             CorId = (byte)6,
                             ProdutoId = 3,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 22,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1163,7 +1160,7 @@ namespace CozaStore.Migrations
                             Id = 70,
                             CorId = (byte)6,
                             ProdutoId = 3,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1171,7 +1168,7 @@ namespace CozaStore.Migrations
                             Id = 71,
                             CorId = (byte)6,
                             ProdutoId = 3,
-                            QtdeEstoque = 18,
+                            QtdeEstoque = 41,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1179,7 +1176,7 @@ namespace CozaStore.Migrations
                             Id = 72,
                             CorId = (byte)6,
                             ProdutoId = 3,
-                            QtdeEstoque = 13,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1187,7 +1184,7 @@ namespace CozaStore.Migrations
                             Id = 73,
                             CorId = (byte)1,
                             ProdutoId = 4,
-                            QtdeEstoque = 47,
+                            QtdeEstoque = 37,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1195,7 +1192,7 @@ namespace CozaStore.Migrations
                             Id = 74,
                             CorId = (byte)1,
                             ProdutoId = 4,
-                            QtdeEstoque = 1,
+                            QtdeEstoque = 14,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1203,7 +1200,7 @@ namespace CozaStore.Migrations
                             Id = 75,
                             CorId = (byte)1,
                             ProdutoId = 4,
-                            QtdeEstoque = 4,
+                            QtdeEstoque = 19,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1211,7 +1208,7 @@ namespace CozaStore.Migrations
                             Id = 76,
                             CorId = (byte)1,
                             ProdutoId = 4,
-                            QtdeEstoque = 35,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1219,7 +1216,7 @@ namespace CozaStore.Migrations
                             Id = 77,
                             CorId = (byte)2,
                             ProdutoId = 4,
-                            QtdeEstoque = 15,
+                            QtdeEstoque = 41,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1227,7 +1224,7 @@ namespace CozaStore.Migrations
                             Id = 78,
                             CorId = (byte)2,
                             ProdutoId = 4,
-                            QtdeEstoque = 15,
+                            QtdeEstoque = 35,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1235,7 +1232,7 @@ namespace CozaStore.Migrations
                             Id = 79,
                             CorId = (byte)2,
                             ProdutoId = 4,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 49,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1243,7 +1240,7 @@ namespace CozaStore.Migrations
                             Id = 80,
                             CorId = (byte)2,
                             ProdutoId = 4,
-                            QtdeEstoque = 42,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1251,7 +1248,7 @@ namespace CozaStore.Migrations
                             Id = 81,
                             CorId = (byte)3,
                             ProdutoId = 4,
-                            QtdeEstoque = 33,
+                            QtdeEstoque = 38,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1259,7 +1256,7 @@ namespace CozaStore.Migrations
                             Id = 82,
                             CorId = (byte)3,
                             ProdutoId = 4,
-                            QtdeEstoque = 27,
+                            QtdeEstoque = 25,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1267,7 +1264,7 @@ namespace CozaStore.Migrations
                             Id = 83,
                             CorId = (byte)3,
                             ProdutoId = 4,
-                            QtdeEstoque = 10,
+                            QtdeEstoque = 14,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1283,7 +1280,7 @@ namespace CozaStore.Migrations
                             Id = 85,
                             CorId = (byte)4,
                             ProdutoId = 4,
-                            QtdeEstoque = 11,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1291,7 +1288,7 @@ namespace CozaStore.Migrations
                             Id = 86,
                             CorId = (byte)4,
                             ProdutoId = 4,
-                            QtdeEstoque = 5,
+                            QtdeEstoque = 12,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1299,7 +1296,7 @@ namespace CozaStore.Migrations
                             Id = 87,
                             CorId = (byte)4,
                             ProdutoId = 4,
-                            QtdeEstoque = 15,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1307,7 +1304,7 @@ namespace CozaStore.Migrations
                             Id = 88,
                             CorId = (byte)4,
                             ProdutoId = 4,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1315,7 +1312,7 @@ namespace CozaStore.Migrations
                             Id = 89,
                             CorId = (byte)5,
                             ProdutoId = 4,
-                            QtdeEstoque = 3,
+                            QtdeEstoque = 49,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1323,7 +1320,7 @@ namespace CozaStore.Migrations
                             Id = 90,
                             CorId = (byte)5,
                             ProdutoId = 4,
-                            QtdeEstoque = 13,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1331,7 +1328,7 @@ namespace CozaStore.Migrations
                             Id = 91,
                             CorId = (byte)5,
                             ProdutoId = 4,
-                            QtdeEstoque = 16,
+                            QtdeEstoque = 31,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1339,7 +1336,7 @@ namespace CozaStore.Migrations
                             Id = 92,
                             CorId = (byte)5,
                             ProdutoId = 4,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 29,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1347,7 +1344,7 @@ namespace CozaStore.Migrations
                             Id = 93,
                             CorId = (byte)6,
                             ProdutoId = 4,
-                            QtdeEstoque = 3,
+                            QtdeEstoque = 43,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1355,7 +1352,7 @@ namespace CozaStore.Migrations
                             Id = 94,
                             CorId = (byte)6,
                             ProdutoId = 4,
-                            QtdeEstoque = 1,
+                            QtdeEstoque = 25,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1363,7 +1360,7 @@ namespace CozaStore.Migrations
                             Id = 95,
                             CorId = (byte)6,
                             ProdutoId = 4,
-                            QtdeEstoque = 14,
+                            QtdeEstoque = 40,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1371,7 +1368,7 @@ namespace CozaStore.Migrations
                             Id = 96,
                             CorId = (byte)6,
                             ProdutoId = 4,
-                            QtdeEstoque = 5,
+                            QtdeEstoque = 43,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1379,7 +1376,7 @@ namespace CozaStore.Migrations
                             Id = 97,
                             CorId = (byte)1,
                             ProdutoId = 5,
-                            QtdeEstoque = 45,
+                            QtdeEstoque = 36,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1387,7 +1384,7 @@ namespace CozaStore.Migrations
                             Id = 98,
                             CorId = (byte)1,
                             ProdutoId = 5,
-                            QtdeEstoque = 40,
+                            QtdeEstoque = 23,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1395,7 +1392,7 @@ namespace CozaStore.Migrations
                             Id = 99,
                             CorId = (byte)1,
                             ProdutoId = 5,
-                            QtdeEstoque = 31,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1403,7 +1400,7 @@ namespace CozaStore.Migrations
                             Id = 100,
                             CorId = (byte)1,
                             ProdutoId = 5,
-                            QtdeEstoque = 47,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1411,7 +1408,7 @@ namespace CozaStore.Migrations
                             Id = 101,
                             CorId = (byte)2,
                             ProdutoId = 5,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1419,7 +1416,7 @@ namespace CozaStore.Migrations
                             Id = 102,
                             CorId = (byte)2,
                             ProdutoId = 5,
-                            QtdeEstoque = 8,
+                            QtdeEstoque = 16,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1427,7 +1424,7 @@ namespace CozaStore.Migrations
                             Id = 103,
                             CorId = (byte)2,
                             ProdutoId = 5,
-                            QtdeEstoque = 15,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1435,7 +1432,7 @@ namespace CozaStore.Migrations
                             Id = 104,
                             CorId = (byte)2,
                             ProdutoId = 5,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 32,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1443,7 +1440,7 @@ namespace CozaStore.Migrations
                             Id = 105,
                             CorId = (byte)3,
                             ProdutoId = 5,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 37,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1451,7 +1448,7 @@ namespace CozaStore.Migrations
                             Id = 106,
                             CorId = (byte)3,
                             ProdutoId = 5,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 5,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1459,7 +1456,7 @@ namespace CozaStore.Migrations
                             Id = 107,
                             CorId = (byte)3,
                             ProdutoId = 5,
-                            QtdeEstoque = 10,
+                            QtdeEstoque = 33,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1467,7 +1464,7 @@ namespace CozaStore.Migrations
                             Id = 108,
                             CorId = (byte)3,
                             ProdutoId = 5,
-                            QtdeEstoque = 16,
+                            QtdeEstoque = 43,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1475,7 +1472,7 @@ namespace CozaStore.Migrations
                             Id = 109,
                             CorId = (byte)4,
                             ProdutoId = 5,
-                            QtdeEstoque = 23,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1483,7 +1480,7 @@ namespace CozaStore.Migrations
                             Id = 110,
                             CorId = (byte)4,
                             ProdutoId = 5,
-                            QtdeEstoque = 8,
+                            QtdeEstoque = 18,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1491,7 +1488,7 @@ namespace CozaStore.Migrations
                             Id = 111,
                             CorId = (byte)4,
                             ProdutoId = 5,
-                            QtdeEstoque = 8,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1499,7 +1496,7 @@ namespace CozaStore.Migrations
                             Id = 112,
                             CorId = (byte)4,
                             ProdutoId = 5,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1507,7 +1504,7 @@ namespace CozaStore.Migrations
                             Id = 113,
                             CorId = (byte)5,
                             ProdutoId = 5,
-                            QtdeEstoque = 17,
+                            QtdeEstoque = 12,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1515,7 +1512,7 @@ namespace CozaStore.Migrations
                             Id = 114,
                             CorId = (byte)5,
                             ProdutoId = 5,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1523,7 +1520,7 @@ namespace CozaStore.Migrations
                             Id = 115,
                             CorId = (byte)5,
                             ProdutoId = 5,
-                            QtdeEstoque = 11,
+                            QtdeEstoque = 29,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1531,7 +1528,7 @@ namespace CozaStore.Migrations
                             Id = 116,
                             CorId = (byte)5,
                             ProdutoId = 5,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 7,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1539,7 +1536,7 @@ namespace CozaStore.Migrations
                             Id = 117,
                             CorId = (byte)6,
                             ProdutoId = 5,
-                            QtdeEstoque = 36,
+                            QtdeEstoque = 2,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1547,7 +1544,7 @@ namespace CozaStore.Migrations
                             Id = 118,
                             CorId = (byte)6,
                             ProdutoId = 5,
-                            QtdeEstoque = 43,
+                            QtdeEstoque = 16,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1555,7 +1552,7 @@ namespace CozaStore.Migrations
                             Id = 119,
                             CorId = (byte)6,
                             ProdutoId = 5,
-                            QtdeEstoque = 36,
+                            QtdeEstoque = 25,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1563,7 +1560,7 @@ namespace CozaStore.Migrations
                             Id = 120,
                             CorId = (byte)6,
                             ProdutoId = 5,
-                            QtdeEstoque = 37,
+                            QtdeEstoque = 40,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1571,7 +1568,7 @@ namespace CozaStore.Migrations
                             Id = 121,
                             CorId = (byte)1,
                             ProdutoId = 6,
-                            QtdeEstoque = 2,
+                            QtdeEstoque = 7,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1579,7 +1576,7 @@ namespace CozaStore.Migrations
                             Id = 122,
                             CorId = (byte)1,
                             ProdutoId = 6,
-                            QtdeEstoque = 46,
+                            QtdeEstoque = 15,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1587,7 +1584,7 @@ namespace CozaStore.Migrations
                             Id = 123,
                             CorId = (byte)1,
                             ProdutoId = 6,
-                            QtdeEstoque = 37,
+                            QtdeEstoque = 49,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1595,7 +1592,7 @@ namespace CozaStore.Migrations
                             Id = 124,
                             CorId = (byte)1,
                             ProdutoId = 6,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 47,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1603,7 +1600,7 @@ namespace CozaStore.Migrations
                             Id = 125,
                             CorId = (byte)2,
                             ProdutoId = 6,
-                            QtdeEstoque = 7,
+                            QtdeEstoque = 25,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1611,7 +1608,7 @@ namespace CozaStore.Migrations
                             Id = 126,
                             CorId = (byte)2,
                             ProdutoId = 6,
-                            QtdeEstoque = 20,
+                            QtdeEstoque = 39,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1619,7 +1616,7 @@ namespace CozaStore.Migrations
                             Id = 127,
                             CorId = (byte)2,
                             ProdutoId = 6,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 11,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1627,7 +1624,7 @@ namespace CozaStore.Migrations
                             Id = 128,
                             CorId = (byte)2,
                             ProdutoId = 6,
-                            QtdeEstoque = 46,
+                            QtdeEstoque = 41,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1635,7 +1632,7 @@ namespace CozaStore.Migrations
                             Id = 129,
                             CorId = (byte)3,
                             ProdutoId = 6,
-                            QtdeEstoque = 35,
+                            QtdeEstoque = 17,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1643,7 +1640,7 @@ namespace CozaStore.Migrations
                             Id = 130,
                             CorId = (byte)3,
                             ProdutoId = 6,
-                            QtdeEstoque = 24,
+                            QtdeEstoque = 23,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1651,7 +1648,7 @@ namespace CozaStore.Migrations
                             Id = 131,
                             CorId = (byte)3,
                             ProdutoId = 6,
-                            QtdeEstoque = 16,
+                            QtdeEstoque = 7,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1659,7 +1656,7 @@ namespace CozaStore.Migrations
                             Id = 132,
                             CorId = (byte)3,
                             ProdutoId = 6,
-                            QtdeEstoque = 21,
+                            QtdeEstoque = 10,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1667,7 +1664,7 @@ namespace CozaStore.Migrations
                             Id = 133,
                             CorId = (byte)4,
                             ProdutoId = 6,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 17,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1675,7 +1672,7 @@ namespace CozaStore.Migrations
                             Id = 134,
                             CorId = (byte)4,
                             ProdutoId = 6,
-                            QtdeEstoque = 23,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1683,7 +1680,7 @@ namespace CozaStore.Migrations
                             Id = 135,
                             CorId = (byte)4,
                             ProdutoId = 6,
-                            QtdeEstoque = 41,
+                            QtdeEstoque = 49,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1691,7 +1688,7 @@ namespace CozaStore.Migrations
                             Id = 136,
                             CorId = (byte)4,
                             ProdutoId = 6,
-                            QtdeEstoque = 45,
+                            QtdeEstoque = 20,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1699,7 +1696,7 @@ namespace CozaStore.Migrations
                             Id = 137,
                             CorId = (byte)5,
                             ProdutoId = 6,
-                            QtdeEstoque = 48,
+                            QtdeEstoque = 29,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1707,7 +1704,7 @@ namespace CozaStore.Migrations
                             Id = 138,
                             CorId = (byte)5,
                             ProdutoId = 6,
-                            QtdeEstoque = 45,
+                            QtdeEstoque = 39,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1715,7 +1712,7 @@ namespace CozaStore.Migrations
                             Id = 139,
                             CorId = (byte)5,
                             ProdutoId = 6,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 36,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1723,7 +1720,7 @@ namespace CozaStore.Migrations
                             Id = 140,
                             CorId = (byte)5,
                             ProdutoId = 6,
-                            QtdeEstoque = 9,
+                            QtdeEstoque = 6,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1731,7 +1728,7 @@ namespace CozaStore.Migrations
                             Id = 141,
                             CorId = (byte)6,
                             ProdutoId = 6,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 26,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1739,7 +1736,7 @@ namespace CozaStore.Migrations
                             Id = 142,
                             CorId = (byte)6,
                             ProdutoId = 6,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 48,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1747,7 +1744,7 @@ namespace CozaStore.Migrations
                             Id = 143,
                             CorId = (byte)6,
                             ProdutoId = 6,
-                            QtdeEstoque = 20,
+                            QtdeEstoque = 19,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1755,7 +1752,7 @@ namespace CozaStore.Migrations
                             Id = 144,
                             CorId = (byte)6,
                             ProdutoId = 6,
-                            QtdeEstoque = 8,
+                            QtdeEstoque = 10,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1763,7 +1760,7 @@ namespace CozaStore.Migrations
                             Id = 145,
                             CorId = (byte)1,
                             ProdutoId = 7,
-                            QtdeEstoque = 16,
+                            QtdeEstoque = 12,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1771,7 +1768,7 @@ namespace CozaStore.Migrations
                             Id = 146,
                             CorId = (byte)1,
                             ProdutoId = 7,
-                            QtdeEstoque = 47,
+                            QtdeEstoque = 12,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1779,7 +1776,7 @@ namespace CozaStore.Migrations
                             Id = 147,
                             CorId = (byte)1,
                             ProdutoId = 7,
-                            QtdeEstoque = 8,
+                            QtdeEstoque = 26,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1787,7 +1784,7 @@ namespace CozaStore.Migrations
                             Id = 148,
                             CorId = (byte)1,
                             ProdutoId = 7,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 31,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1795,7 +1792,7 @@ namespace CozaStore.Migrations
                             Id = 149,
                             CorId = (byte)2,
                             ProdutoId = 7,
-                            QtdeEstoque = 12,
+                            QtdeEstoque = 23,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1803,7 +1800,7 @@ namespace CozaStore.Migrations
                             Id = 150,
                             CorId = (byte)2,
                             ProdutoId = 7,
-                            QtdeEstoque = 9,
+                            QtdeEstoque = 5,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1811,7 +1808,7 @@ namespace CozaStore.Migrations
                             Id = 151,
                             CorId = (byte)2,
                             ProdutoId = 7,
-                            QtdeEstoque = 25,
+                            QtdeEstoque = 20,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1819,7 +1816,7 @@ namespace CozaStore.Migrations
                             Id = 152,
                             CorId = (byte)2,
                             ProdutoId = 7,
-                            QtdeEstoque = 18,
+                            QtdeEstoque = 0,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1827,7 +1824,7 @@ namespace CozaStore.Migrations
                             Id = 153,
                             CorId = (byte)3,
                             ProdutoId = 7,
-                            QtdeEstoque = 7,
+                            QtdeEstoque = 5,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1835,7 +1832,7 @@ namespace CozaStore.Migrations
                             Id = 154,
                             CorId = (byte)3,
                             ProdutoId = 7,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 12,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1843,7 +1840,7 @@ namespace CozaStore.Migrations
                             Id = 155,
                             CorId = (byte)3,
                             ProdutoId = 7,
-                            QtdeEstoque = 38,
+                            QtdeEstoque = 24,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1851,7 +1848,7 @@ namespace CozaStore.Migrations
                             Id = 156,
                             CorId = (byte)3,
                             ProdutoId = 7,
-                            QtdeEstoque = 23,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1859,7 +1856,7 @@ namespace CozaStore.Migrations
                             Id = 157,
                             CorId = (byte)4,
                             ProdutoId = 7,
-                            QtdeEstoque = 18,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1867,7 +1864,7 @@ namespace CozaStore.Migrations
                             Id = 158,
                             CorId = (byte)4,
                             ProdutoId = 7,
-                            QtdeEstoque = 17,
+                            QtdeEstoque = 19,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1875,7 +1872,7 @@ namespace CozaStore.Migrations
                             Id = 159,
                             CorId = (byte)4,
                             ProdutoId = 7,
-                            QtdeEstoque = 41,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1883,7 +1880,7 @@ namespace CozaStore.Migrations
                             Id = 160,
                             CorId = (byte)4,
                             ProdutoId = 7,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 39,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1891,7 +1888,7 @@ namespace CozaStore.Migrations
                             Id = 161,
                             CorId = (byte)5,
                             ProdutoId = 7,
-                            QtdeEstoque = 28,
+                            QtdeEstoque = 12,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1899,7 +1896,7 @@ namespace CozaStore.Migrations
                             Id = 162,
                             CorId = (byte)5,
                             ProdutoId = 7,
-                            QtdeEstoque = 36,
+                            QtdeEstoque = 46,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1907,7 +1904,7 @@ namespace CozaStore.Migrations
                             Id = 163,
                             CorId = (byte)5,
                             ProdutoId = 7,
-                            QtdeEstoque = 1,
+                            QtdeEstoque = 18,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1915,7 +1912,7 @@ namespace CozaStore.Migrations
                             Id = 164,
                             CorId = (byte)5,
                             ProdutoId = 7,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 41,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1923,7 +1920,7 @@ namespace CozaStore.Migrations
                             Id = 165,
                             CorId = (byte)6,
                             ProdutoId = 7,
-                            QtdeEstoque = 1,
+                            QtdeEstoque = 5,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1931,7 +1928,7 @@ namespace CozaStore.Migrations
                             Id = 166,
                             CorId = (byte)6,
                             ProdutoId = 7,
-                            QtdeEstoque = 32,
+                            QtdeEstoque = 37,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1939,7 +1936,7 @@ namespace CozaStore.Migrations
                             Id = 167,
                             CorId = (byte)6,
                             ProdutoId = 7,
-                            QtdeEstoque = 22,
+                            QtdeEstoque = 6,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1947,7 +1944,7 @@ namespace CozaStore.Migrations
                             Id = 168,
                             CorId = (byte)6,
                             ProdutoId = 7,
-                            QtdeEstoque = 34,
+                            QtdeEstoque = 22,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1955,7 +1952,7 @@ namespace CozaStore.Migrations
                             Id = 169,
                             CorId = (byte)1,
                             ProdutoId = 8,
-                            QtdeEstoque = 20,
+                            QtdeEstoque = 3,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1963,7 +1960,7 @@ namespace CozaStore.Migrations
                             Id = 170,
                             CorId = (byte)1,
                             ProdutoId = 8,
-                            QtdeEstoque = 11,
+                            QtdeEstoque = 47,
                             TamanhoId = (byte)2
                         },
                         new
@@ -1971,7 +1968,7 @@ namespace CozaStore.Migrations
                             Id = 171,
                             CorId = (byte)1,
                             ProdutoId = 8,
-                            QtdeEstoque = 27,
+                            QtdeEstoque = 22,
                             TamanhoId = (byte)3
                         },
                         new
@@ -1979,7 +1976,7 @@ namespace CozaStore.Migrations
                             Id = 172,
                             CorId = (byte)1,
                             ProdutoId = 8,
-                            QtdeEstoque = 16,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)4
                         },
                         new
@@ -1987,7 +1984,7 @@ namespace CozaStore.Migrations
                             Id = 173,
                             CorId = (byte)2,
                             ProdutoId = 8,
-                            QtdeEstoque = 6,
+                            QtdeEstoque = 26,
                             TamanhoId = (byte)1
                         },
                         new
@@ -1995,7 +1992,7 @@ namespace CozaStore.Migrations
                             Id = 174,
                             CorId = (byte)2,
                             ProdutoId = 8,
-                            QtdeEstoque = 27,
+                            QtdeEstoque = 42,
                             TamanhoId = (byte)2
                         },
                         new
@@ -2003,7 +2000,7 @@ namespace CozaStore.Migrations
                             Id = 175,
                             CorId = (byte)2,
                             ProdutoId = 8,
-                            QtdeEstoque = 36,
+                            QtdeEstoque = 4,
                             TamanhoId = (byte)3
                         },
                         new
@@ -2011,7 +2008,7 @@ namespace CozaStore.Migrations
                             Id = 176,
                             CorId = (byte)2,
                             ProdutoId = 8,
-                            QtdeEstoque = 4,
+                            QtdeEstoque = 8,
                             TamanhoId = (byte)4
                         },
                         new
@@ -2019,7 +2016,7 @@ namespace CozaStore.Migrations
                             Id = 177,
                             CorId = (byte)3,
                             ProdutoId = 8,
-                            QtdeEstoque = 30,
+                            QtdeEstoque = 22,
                             TamanhoId = (byte)1
                         },
                         new
@@ -2027,7 +2024,7 @@ namespace CozaStore.Migrations
                             Id = 178,
                             CorId = (byte)3,
                             ProdutoId = 8,
-                            QtdeEstoque = 23,
+                            QtdeEstoque = 11,
                             TamanhoId = (byte)2
                         },
                         new
@@ -2035,7 +2032,7 @@ namespace CozaStore.Migrations
                             Id = 179,
                             CorId = (byte)3,
                             ProdutoId = 8,
-                            QtdeEstoque = 41,
+                            QtdeEstoque = 17,
                             TamanhoId = (byte)3
                         },
                         new
@@ -2043,7 +2040,7 @@ namespace CozaStore.Migrations
                             Id = 180,
                             CorId = (byte)3,
                             ProdutoId = 8,
-                            QtdeEstoque = 11,
+                            QtdeEstoque = 23,
                             TamanhoId = (byte)4
                         },
                         new
@@ -2051,7 +2048,7 @@ namespace CozaStore.Migrations
                             Id = 181,
                             CorId = (byte)4,
                             ProdutoId = 8,
-                            QtdeEstoque = 17,
+                            QtdeEstoque = 41,
                             TamanhoId = (byte)1
                         },
                         new
@@ -2059,7 +2056,7 @@ namespace CozaStore.Migrations
                             Id = 182,
                             CorId = (byte)4,
                             ProdutoId = 8,
-                            QtdeEstoque = 13,
+                            QtdeEstoque = 31,
                             TamanhoId = (byte)2
                         },
                         new
@@ -2067,7 +2064,7 @@ namespace CozaStore.Migrations
                             Id = 183,
                             CorId = (byte)4,
                             ProdutoId = 8,
-                            QtdeEstoque = 0,
+                            QtdeEstoque = 47,
                             TamanhoId = (byte)3
                         },
                         new
@@ -2075,7 +2072,7 @@ namespace CozaStore.Migrations
                             Id = 184,
                             CorId = (byte)4,
                             ProdutoId = 8,
-                            QtdeEstoque = 21,
+                            QtdeEstoque = 17,
                             TamanhoId = (byte)4
                         },
                         new
@@ -2083,7 +2080,7 @@ namespace CozaStore.Migrations
                             Id = 185,
                             CorId = (byte)5,
                             ProdutoId = 8,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)1
                         },
                         new
@@ -2091,7 +2088,7 @@ namespace CozaStore.Migrations
                             Id = 186,
                             CorId = (byte)5,
                             ProdutoId = 8,
-                            QtdeEstoque = 8,
+                            QtdeEstoque = 30,
                             TamanhoId = (byte)2
                         },
                         new
@@ -2099,7 +2096,7 @@ namespace CozaStore.Migrations
                             Id = 187,
                             CorId = (byte)5,
                             ProdutoId = 8,
-                            QtdeEstoque = 16,
+                            QtdeEstoque = 2,
                             TamanhoId = (byte)3
                         },
                         new
@@ -2107,7 +2104,7 @@ namespace CozaStore.Migrations
                             Id = 188,
                             CorId = (byte)5,
                             ProdutoId = 8,
-                            QtdeEstoque = 38,
+                            QtdeEstoque = 1,
                             TamanhoId = (byte)4
                         },
                         new
@@ -2115,7 +2112,7 @@ namespace CozaStore.Migrations
                             Id = 189,
                             CorId = (byte)6,
                             ProdutoId = 8,
-                            QtdeEstoque = 19,
+                            QtdeEstoque = 21,
                             TamanhoId = (byte)1
                         },
                         new
@@ -2123,7 +2120,7 @@ namespace CozaStore.Migrations
                             Id = 190,
                             CorId = (byte)6,
                             ProdutoId = 8,
-                            QtdeEstoque = 18,
+                            QtdeEstoque = 15,
                             TamanhoId = (byte)2
                         },
                         new
@@ -2131,7 +2128,7 @@ namespace CozaStore.Migrations
                             Id = 191,
                             CorId = (byte)6,
                             ProdutoId = 8,
-                            QtdeEstoque = 20,
+                            QtdeEstoque = 0,
                             TamanhoId = (byte)3
                         },
                         new
@@ -2139,7 +2136,7 @@ namespace CozaStore.Migrations
                             Id = 192,
                             CorId = (byte)6,
                             ProdutoId = 8,
-                            QtdeEstoque = 3,
+                            QtdeEstoque = 17,
                             TamanhoId = (byte)4
                         });
                 });
@@ -2294,27 +2291,27 @@ namespace CozaStore.Migrations
                         new
                         {
                             ProdutoId = 2,
-                            TagId = (byte)4
+                            TagId = (byte)1
                         },
                         new
                         {
                             ProdutoId = 3,
-                            TagId = (byte)5
-                        },
-                        new
-                        {
-                            ProdutoId = 4,
-                            TagId = (byte)2
-                        },
-                        new
-                        {
-                            ProdutoId = 5,
                             TagId = (byte)3
                         },
                         new
                         {
-                            ProdutoId = 6,
+                            ProdutoId = 4,
+                            TagId = (byte)5
+                        },
+                        new
+                        {
+                            ProdutoId = 5,
                             TagId = (byte)1
+                        },
+                        new
+                        {
+                            ProdutoId = 6,
+                            TagId = (byte)2
                         },
                         new
                         {
@@ -2324,12 +2321,12 @@ namespace CozaStore.Migrations
                         new
                         {
                             ProdutoId = 8,
-                            TagId = (byte)5
+                            TagId = (byte)2
                         },
                         new
                         {
                             ProdutoId = 9,
-                            TagId = (byte)5
+                            TagId = (byte)1
                         },
                         new
                         {
@@ -2351,6 +2348,7 @@ namespace CozaStore.Migrations
             modelBuilder.Entity("CozaStore.Models.Tag", b =>
                 {
                     b.Property<byte>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("tinyint unsigned");
 
                     b.Property<string>("Nome")
@@ -2393,6 +2391,7 @@ namespace CozaStore.Migrations
             modelBuilder.Entity("CozaStore.Models.Tamanho", b =>
                 {
                     b.Property<byte>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("tinyint unsigned");
 
                     b.Property<string>("Nome")
@@ -2460,7 +2459,7 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "b1c0da8c-483e-4ec9-96dc-85554ca01142",
+                            UsuarioId = "73a2b9b3-f4f8-4b1d-97f2-d65b423bd2d0",
                             DataNascimento = new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/users/avatar.png",
                             Nome = "José Antonio Gallo Junior"
@@ -2495,22 +2494,22 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d720d15b-b9e8-442f-93a8-eeb1876ff53d",
-                            ConcurrencyStamp = "94377fdb-20c5-47d4-95f3-94d59fc81964",
+                            Id = "d61a1cc2-eac9-4a18-908b-d9b5e23935b2",
+                            ConcurrencyStamp = "7d52ff30-2a85-470e-8558-27111a12ff48",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "8c30ab91-cee0-472c-bb71-20083f10d619",
-                            ConcurrencyStamp = "533b0406-7dab-4623-befb-22c35a570483",
+                            Id = "985c4813-51ac-449f-8498-eb758767d2ac",
+                            ConcurrencyStamp = "b7cfc562-9e93-4dbc-b4a1-85df130d2498",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         },
                         new
                         {
-                            Id = "ac1b920c-a877-4299-bc0b-8757fb40a167",
-                            ConcurrencyStamp = "a1ef0cbc-20af-4809-afbd-01ccceac48bc",
+                            Id = "f5572593-0d76-438e-bcaf-0362c02b746e",
+                            ConcurrencyStamp = "49731c25-bf66-4b57-9a35-0b6b78ad92a3",
                             Name = "Cliente",
                             NormalizedName = "CLIENTE"
                         });
@@ -2605,17 +2604,17 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b1c0da8c-483e-4ec9-96dc-85554ca01142",
+                            Id = "73a2b9b3-f4f8-4b1d-97f2-d65b423bd2d0",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9f00e728-d19c-406a-b872-ca02f30a3d33",
+                            ConcurrencyStamp = "9cfc6d94-731c-4e6d-b09d-a76118a4e766",
                             Email = "admin@cozastore.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@COZASTORE.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEASMboQG8jflgHMj9bf+nUOJiypERYjHvMXVrgyJQEW1gIEFhrnuF+DHP1cUAAj72w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMBc8ZhTOOECMhzVlWl4ttvy7vuAP5ZdgVzlsExViTeb1sYjsazwHB9uiy/JXXIY5Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cca3a326-b25f-49eb-8b2d-249700afde45",
+                            SecurityStamp = "145e6ce4-a61a-40b4-9921-b9a3de3529d9",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -2683,18 +2682,18 @@ namespace CozaStore.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "b1c0da8c-483e-4ec9-96dc-85554ca01142",
-                            RoleId = "d720d15b-b9e8-442f-93a8-eeb1876ff53d"
+                            UserId = "73a2b9b3-f4f8-4b1d-97f2-d65b423bd2d0",
+                            RoleId = "d61a1cc2-eac9-4a18-908b-d9b5e23935b2"
                         },
                         new
                         {
-                            UserId = "b1c0da8c-483e-4ec9-96dc-85554ca01142",
-                            RoleId = "8c30ab91-cee0-472c-bb71-20083f10d619"
+                            UserId = "73a2b9b3-f4f8-4b1d-97f2-d65b423bd2d0",
+                            RoleId = "985c4813-51ac-449f-8498-eb758767d2ac"
                         },
                         new
                         {
-                            UserId = "b1c0da8c-483e-4ec9-96dc-85554ca01142",
-                            RoleId = "ac1b920c-a877-4299-bc0b-8757fb40a167"
+                            UserId = "73a2b9b3-f4f8-4b1d-97f2-d65b423bd2d0",
+                            RoleId = "f5572593-0d76-438e-bcaf-0362c02b746e"
                         });
                 });
 
@@ -2730,19 +2729,11 @@ namespace CozaStore.Migrations
 
             modelBuilder.Entity("CozaStore.Models.Carrinho", b =>
                 {
-                    b.HasOne("CozaStore.Models.Produto", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CozaStore.Models.Usuario", "Usuario")
                         .WithMany()
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Produto");
 
                     b.Navigation("Usuario");
                 });

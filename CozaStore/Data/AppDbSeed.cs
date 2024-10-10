@@ -389,7 +389,7 @@ public class AppDbSeed
             {
                Id = Guid.NewGuid().ToString(),
                Name = "Funcionário",
-               NormalizedName = "FUNCIONARIO"
+               NormalizedName = "FUNCIONÁRIO"
             },
             new IdentityRole()
             {
